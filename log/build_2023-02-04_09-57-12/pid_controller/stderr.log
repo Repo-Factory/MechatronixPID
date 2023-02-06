@@ -1,0 +1,15 @@
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:34:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kdesired_poisition[m[K’ was not declared in this scope; did you mean ‘[01m[Kdesired_position_[m[K’?
+   34 |         ([01;31m[Kdesired_poisition[m[K, 10, std::bind(&Controller::desired_position_callback, this, _1));
+      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |          [32m[Kdesired_position_[m[K
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:34:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kdesired_position_callback[m[K’ is not a member of ‘[01m[KController[m[K’
+   34 |         (desired_poisition, 10, std::bind(&Controller::[01;31m[Kdesired_position_callback[m[K, this, _1));
+      |                                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:[m[K In member function ‘[01m[Kstd::vector<int> Controller::getError(std::vector<int>, std::vector<int>)[m[K’:
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:65:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+   65 |         for (int i = 0; [01;35m[Ki < desired_position.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/pid_controller.dir/build.make:63: CMakeFiles/pid_controller.dir/src/pid_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/pid_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,218 @@
+[0.000000] (-) TimerEvent: {}
+[0.003867] (-) JobUnselected: {'identifier': 'dummy_brain'}
+[0.004574] (-) JobUnselected: {'identifier': 'dummy_sensor'}
+[0.004948] (-) JobUnselected: {'identifier': 'robot_types'}
+[0.005345] (pid_controller) JobQueued: {'identifier': 'pid_controller', 'dependencies': OrderedDict([('robot_types', '/home/conner/mechatronics/pid/install/robot_types')])}
+[0.005569] (pid_controller) JobStarted: {'identifier': 'pid_controller'}
+[0.097675] (-) TimerEvent: {}
+[0.198794] (-) TimerEvent: {}
+[0.299928] (-) TimerEvent: {}
+[0.400964] (-) TimerEvent: {}
+[0.504997] (-) TimerEvent: {}
+[0.513244] (pid_controller) JobProgress: {'identifier': 'pid_controller', 'progress': 'cmake'}
+[0.514806] (pid_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/conner/mechatronics/pid/pid_controller', '-DCMAKE_INSTALL_PREFIX=/home/conner/mechatronics/pid/install/pid_controller'], 'cwd': '/home/conner/mechatronics/pid/build/pid_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'conner'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/conner'), ('OLDPWD', '/home/conner/mechatronics'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/conner/mechatronics/pid/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'conner'), ('NAME', 'ConnerSurface'), ('WSL_INTEROP', '/run/WSL/8_interop'), ('PULSE_SERVER', '/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/conner/apps/nvm:/mnt/c/conner/apps/nvm:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/conner/apps/Python/Python310/Scripts/:/mnt/c/conner/apps/Python/Python310/:/mnt/c/Users/conne/AppData/Local/Microsoft/WindowsApps:/mnt/c/conner/apps/vscode/bin:/mnt/c/Conner/Apps/nvm/v16.17.0:/mnt/c/Conner/Apps/nvm:/snap/bin'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/home/conner/mechatronics/pid/install/robot_types:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/conner/mechatronics/pid/build/pid_controller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy'), ('WSLENV', '')]), 'shell': False}
+[0.572592] (pid_controller) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.605477] (-) TimerEvent: {}
+[0.638715] (pid_controller) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.705834] (-) TimerEvent: {}
+[0.809028] (-) TimerEvent: {}
+[0.910141] (-) TimerEvent: {}
+[1.005757] (pid_controller) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[1.010392] (-) TimerEvent: {}
+[1.111323] (-) TimerEvent: {}
+[1.212244] (-) TimerEvent: {}
+[1.313083] (-) TimerEvent: {}
+[1.414073] (-) TimerEvent: {}
+[1.515362] (-) TimerEvent: {}
+[1.605375] (pid_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.613746] (pid_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[1.615496] (-) TimerEvent: {}
+[1.716321] (-) TimerEvent: {}
+[1.817370] (-) TimerEvent: {}
+[1.918166] (-) TimerEvent: {}
+[2.019073] (-) TimerEvent: {}
+[2.120012] (-) TimerEvent: {}
+[2.221102] (-) TimerEvent: {}
+[2.322092] (-) TimerEvent: {}
+[2.423166] (-) TimerEvent: {}
+[2.524069] (-) TimerEvent: {}
+[2.625180] (-) TimerEvent: {}
+[2.726085] (-) TimerEvent: {}
+[2.827071] (-) TimerEvent: {}
+[2.928282] (-) TimerEvent: {}
+[3.029359] (-) TimerEvent: {}
+[3.130453] (-) TimerEvent: {}
+[3.231600] (-) TimerEvent: {}
+[3.333070] (-) TimerEvent: {}
+[3.434127] (-) TimerEvent: {}
+[3.535290] (-) TimerEvent: {}
+[3.636662] (-) TimerEvent: {}
+[3.738339] (-) TimerEvent: {}
+[3.839971] (-) TimerEvent: {}
+[3.941526] (-) TimerEvent: {}
+[4.042355] (-) TimerEvent: {}
+[4.143625] (-) TimerEvent: {}
+[4.245064] (-) TimerEvent: {}
+[4.346595] (-) TimerEvent: {}
+[4.447817] (-) TimerEvent: {}
+[4.548866] (-) TimerEvent: {}
+[4.649918] (-) TimerEvent: {}
+[4.751808] (-) TimerEvent: {}
+[4.853004] (-) TimerEvent: {}
+[4.953978] (-) TimerEvent: {}
+[5.055139] (-) TimerEvent: {}
+[5.156418] (-) TimerEvent: {}
+[5.257884] (-) TimerEvent: {}
+[5.359359] (-) TimerEvent: {}
+[5.460742] (-) TimerEvent: {}
+[5.561919] (-) TimerEvent: {}
+[5.662848] (-) TimerEvent: {}
+[5.764015] (-) TimerEvent: {}
+[5.865195] (-) TimerEvent: {}
+[5.966090] (-) TimerEvent: {}
+[6.067018] (-) TimerEvent: {}
+[6.167971] (-) TimerEvent: {}
+[6.268823] (-) TimerEvent: {}
+[6.369809] (-) TimerEvent: {}
+[6.470726] (-) TimerEvent: {}
+[6.571612] (-) TimerEvent: {}
+[6.672389] (-) TimerEvent: {}
+[6.773408] (-) TimerEvent: {}
+[6.874563] (-) TimerEvent: {}
+[6.976707] (-) TimerEvent: {}
+[7.077745] (-) TimerEvent: {}
+[7.179260] (-) TimerEvent: {}
+[7.280059] (-) TimerEvent: {}
+[7.381254] (-) TimerEvent: {}
+[7.482652] (-) TimerEvent: {}
+[7.583771] (-) TimerEvent: {}
+[7.684545] (-) TimerEvent: {}
+[7.786045] (-) TimerEvent: {}
+[7.887741] (-) TimerEvent: {}
+[7.990661] (-) TimerEvent: {}
+[8.092169] (-) TimerEvent: {}
+[8.193620] (-) TimerEvent: {}
+[8.295249] (-) TimerEvent: {}
+[8.396548] (-) TimerEvent: {}
+[8.497500] (-) TimerEvent: {}
+[8.598581] (-) TimerEvent: {}
+[8.699873] (-) TimerEvent: {}
+[8.800802] (-) TimerEvent: {}
+[8.902523] (-) TimerEvent: {}
+[9.003317] (-) TimerEvent: {}
+[9.104630] (-) TimerEvent: {}
+[9.206340] (-) TimerEvent: {}
+[9.307925] (-) TimerEvent: {}
+[9.409343] (-) TimerEvent: {}
+[9.511047] (-) TimerEvent: {}
+[9.613161] (-) TimerEvent: {}
+[9.714362] (-) TimerEvent: {}
+[9.815891] (-) TimerEvent: {}
+[9.916887] (-) TimerEvent: {}
+[10.017744] (-) TimerEvent: {}
+[10.118768] (-) TimerEvent: {}
+[10.219660] (-) TimerEvent: {}
+[10.320577] (-) TimerEvent: {}
+[10.421513] (-) TimerEvent: {}
+[10.522541] (-) TimerEvent: {}
+[10.623395] (-) TimerEvent: {}
+[10.724403] (-) TimerEvent: {}
+[10.825576] (-) TimerEvent: {}
+[10.927287] (-) TimerEvent: {}
+[11.028910] (-) TimerEvent: {}
+[11.130068] (-) TimerEvent: {}
+[11.231028] (-) TimerEvent: {}
+[11.331961] (-) TimerEvent: {}
+[11.432738] (-) TimerEvent: {}
+[11.533662] (-) TimerEvent: {}
+[11.634644] (-) TimerEvent: {}
+[11.735842] (-) TimerEvent: {}
+[11.836612] (-) TimerEvent: {}
+[11.937583] (-) TimerEvent: {}
+[12.038559] (-) TimerEvent: {}
+[12.139470] (-) TimerEvent: {}
+[12.240247] (-) TimerEvent: {}
+[12.341187] (-) TimerEvent: {}
+[12.442275] (-) TimerEvent: {}
+[12.543168] (-) TimerEvent: {}
+[12.644010] (-) TimerEvent: {}
+[12.744986] (-) TimerEvent: {}
+[12.845880] (-) TimerEvent: {}
+[12.946829] (-) TimerEvent: {}
+[13.047748] (-) TimerEvent: {}
+[13.148725] (-) TimerEvent: {}
+[13.249724] (-) TimerEvent: {}
+[13.350762] (-) TimerEvent: {}
+[13.451762] (-) TimerEvent: {}
+[13.552826] (-) TimerEvent: {}
+[13.653771] (-) TimerEvent: {}
+[13.754693] (-) TimerEvent: {}
+[13.855753] (-) TimerEvent: {}
+[13.956746] (-) TimerEvent: {}
+[14.057709] (-) TimerEvent: {}
+[14.158679] (-) TimerEvent: {}
+[14.259493] (-) TimerEvent: {}
+[14.360411] (-) TimerEvent: {}
+[14.461359] (-) TimerEvent: {}
+[14.562215] (-) TimerEvent: {}
+[14.663333] (-) TimerEvent: {}
+[14.764269] (-) TimerEvent: {}
+[14.865463] (-) TimerEvent: {}
+[14.966462] (-) TimerEvent: {}
+[15.067515] (-) TimerEvent: {}
+[15.168431] (-) TimerEvent: {}
+[15.269370] (-) TimerEvent: {}
+[15.370520] (-) TimerEvent: {}
+[15.471628] (-) TimerEvent: {}
+[15.572560] (-) TimerEvent: {}
+[15.673526] (-) TimerEvent: {}
+[15.774417] (-) TimerEvent: {}
+[15.875386] (-) TimerEvent: {}
+[15.976439] (-) TimerEvent: {}
+[16.077441] (-) TimerEvent: {}
+[16.178391] (-) TimerEvent: {}
+[16.279286] (-) TimerEvent: {}
+[16.380280] (-) TimerEvent: {}
+[16.481262] (-) TimerEvent: {}
+[16.582075] (-) TimerEvent: {}
+[16.682966] (-) TimerEvent: {}
+[16.784175] (-) TimerEvent: {}
+[16.885021] (-) TimerEvent: {}
+[16.985888] (-) TimerEvent: {}
+[17.086957] (-) TimerEvent: {}
+[17.188085] (-) TimerEvent: {}
+[17.281140] (pid_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[17.288427] (-) TimerEvent: {}
+[17.375122] (pid_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[17.377407] (pid_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[17.390936] (-) TimerEvent: {}
+[17.491992] (-) TimerEvent: {}
+[17.592843] (-) TimerEvent: {}
+[17.649335] (pid_controller) StdoutLine: {'line': b'-- Found robot_types: 0.0.0 (/home/conner/mechatronics/pid/install/robot_types/share/robot_types/cmake)\n'}
+[17.693127] (-) TimerEvent: {}
+[17.793408] (pid_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[17.793740] (-) TimerEvent: {}
+[17.812103] (pid_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[17.815802] (pid_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/conner/mechatronics/pid/build/pid_controller\n'}
+[17.834943] (pid_controller) CommandEnded: {'returncode': 0}
+[17.842854] (pid_controller) JobProgress: {'identifier': 'pid_controller', 'progress': 'build'}
+[17.844199] (pid_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/conner/mechatronics/pid/build/pid_controller', '--', '-j8', '-l8'], 'cwd': '/home/conner/mechatronics/pid/build/pid_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'conner'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/conner'), ('OLDPWD', '/home/conner/mechatronics'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/conner/mechatronics/pid/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'conner'), ('NAME', 'ConnerSurface'), ('WSL_INTEROP', '/run/WSL/8_interop'), ('PULSE_SERVER', '/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/conner/apps/nvm:/mnt/c/conner/apps/nvm:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/conner/apps/Python/Python310/Scripts/:/mnt/c/conner/apps/Python/Python310/:/mnt/c/Users/conne/AppData/Local/Microsoft/WindowsApps:/mnt/c/conner/apps/vscode/bin:/mnt/c/Conner/Apps/nvm/v16.17.0:/mnt/c/Conner/Apps/nvm:/snap/bin'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/home/conner/mechatronics/pid/install/robot_types:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/conner/mechatronics/pid/build/pid_controller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy'), ('WSLENV', '')]), 'shell': False}
+[17.894183] (-) TimerEvent: {}
+[17.919634] (pid_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pid_controller\x1b[0m\n'}
+[17.994457] (-) TimerEvent: {}
+[18.009358] (pid_controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pid_controller.dir/src/pid_controller.cpp.o\x1b[0m\n'}
+[18.094757] (-) TimerEvent: {}
+[18.195884] (-) TimerEvent: {}
+[18.296904] (-) TimerEvent: {}
+[18.369309] (pid_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:10:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Krobot_types/msg/Position.hpp: No such file or directory\n'}
+[18.370240] (pid_controller) StderrLine: {'line': b'   10 | #include \x1b[01;31m\x1b[K"robot_types/msg/Position.hpp"\x1b[m\x1b[K          // Custom message types defined in robot_types pack\n'}
+[18.370796] (pid_controller) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.371118] (pid_controller) StderrLine: {'line': b'compilation terminated.\n'}
+[18.375672] (pid_controller) StderrLine: {'line': b'make[2]: *** [CMakeFiles/pid_controller.dir/build.make:63: CMakeFiles/pid_controller.dir/src/pid_controller.cpp.o] Error 1\n'}
+[18.376953] (pid_controller) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/pid_controller.dir/all] Error 2\n'}
+[18.377752] (pid_controller) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[18.386302] (pid_controller) CommandEnded: {'returncode': 2}
+[18.397249] (-) TimerEvent: {}
+[18.498141] (-) TimerEvent: {}
+[18.513990] (pid_controller) JobEnded: {'identifier': 'pid_controller', 'rc': 2}
+[18.527503] (-) EventReactorShutdown: {}

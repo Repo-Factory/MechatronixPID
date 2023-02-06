@@ -1,0 +1,10 @@
+/home/conner/mechatronics/pid/build/dummy_brain/CMakeFiles/install/strip.dir
+/home/conner/mechatronics/pid/build/dummy_brain/CMakeFiles/install/local.dir
+/home/conner/mechatronics/pid/build/dummy_brain/CMakeFiles/install.dir
+/home/conner/mechatronics/pid/build/dummy_brain/CMakeFiles/list_install_components.dir
+/home/conner/mechatronics/pid/build/dummy_brain/CMakeFiles/rebuild_cache.dir
+/home/conner/mechatronics/pid/build/dummy_brain/CMakeFiles/edit_cache.dir
+/home/conner/mechatronics/pid/build/dummy_brain/CMakeFiles/test.dir
+/home/conner/mechatronics/pid/build/dummy_brain/CMakeFiles/dummy_brain.dir
+/home/conner/mechatronics/pid/build/dummy_brain/CMakeFiles/dummy_brain_uninstall.dir
+/home/conner/mechatronics/pid/build/dummy_brain/CMakeFiles/uninstall.dir

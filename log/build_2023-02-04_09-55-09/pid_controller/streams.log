@@ -1,0 +1,28 @@
+[0.195s] Invoking command in '/home/conner/mechatronics/pid/build/pid_controller': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy /usr/bin/cmake --build /home/conner/mechatronics/pid/build/pid_controller -- -j8 -l8
+[0.233s] [35m[1mScanning dependencies of target pid_controller[0m
+[0.261s] [ 50%] [32mBuilding CXX object CMakeFiles/pid_controller.dir/src/pid_controller.cpp.o[0m
+[2.806s] [01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[2.807s] [01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:34:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kdesired_poisition[m[K’ was not declared in this scope; did you mean ‘[01m[Kdesired_position_[m[K’?
+[2.807s]    34 |         ([01;31m[Kdesired_poisition[m[K, 10, std::bind(&Controller::desired_position_callback, this, _1));
+[2.807s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.807s]       |          [32m[Kdesired_position_[m[K
+[2.807s] [01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:34:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kdesired_position_callback[m[K’ is not a member of ‘[01m[KController[m[K’
+[2.807s]    34 |         (desired_poisition, 10, std::bind(&Controller::[01;31m[Kdesired_position_callback[m[K, this, _1));
+[2.807s]       |                                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.816s] [01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::position_sensor_callback(robot_types::msg::Position_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.816s] [01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:51:31:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KController::getError()[m[K’
+[2.817s]    51 |          printVector(getError([01;31m[K)[m[K);
+[2.817s]       |                               [01;31m[K^[m[K
+[2.817s] [01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:62:17:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<int> Controller::getError(std::vector<int>, std::vector<int>)[m[K’
+[2.817s]    62 |     vector<int> [01;36m[KgetError[m[K(vector<int> desired_position, vector<int> current_position)
+[2.817s]       |                 [01;36m[K^~~~~~~~[m[K
+[2.817s] [01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:62:17:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[2.820s] [01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:[m[K In member function ‘[01m[Kstd::vector<int> Controller::getError(std::vector<int>, std::vector<int>)[m[K’:
+[2.821s] [01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:65:46:[m[K [01;31m[Kerror: [m[Kinvalid use of member function ‘[01m[Kstd::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::size() const [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::size_type = long unsigned int][m[K’ (did you forget the ‘[01m[K()[m[K’ ?)
+[2.821s]    65 |         for (int i = 0; i < [01;31m[Kdesired_position.size[m[K; i++)
+[2.821s]       |                             [01;31m[K~~~~~~~~~~~~~~~~~^~~~[m[K
+[2.821s]       |                                                  [32m[K()[m[K
+[4.833s] make[2]: *** [CMakeFiles/pid_controller.dir/build.make:63: CMakeFiles/pid_controller.dir/src/pid_controller.cpp.o] Error 1
+[4.833s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/pid_controller.dir/all] Error 2
+[4.833s] make: *** [Makefile:141: all] Error 2
+[4.838s] Invoked command in '/home/conner/mechatronics/pid/build/pid_controller' returned '2': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy /usr/bin/cmake --build /home/conner/mechatronics/pid/build/pid_controller -- -j8 -l8

@@ -1,0 +1,34 @@
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found robot_types: 0.0.0 (/home/conner/mechatronics/pid/install/robot_types/share/robot_types/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/conner/mechatronics/pid/build/dummy_brain
+[35m[1mScanning dependencies of target dummy_brain[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/dummy_brain.dir/src/dummy_brain.cpp.o[0m
+[100%] [32m[1mLinking CXX executable dummy_brain[0m
+[100%] Built target dummy_brain
+-- Install configuration: ""
+-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/lib/dummy_brain/dummy_brain
+-- Set runtime path of "/home/conner/mechatronics/pid/install/dummy_brain/lib/dummy_brain/dummy_brain" to ""
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/ament_index/resource_index/package_run_dependencies/dummy_brain
+-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/ament_index/resource_index/parent_prefix_path/dummy_brain
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/environment/ament_prefix_path.sh
+-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/environment/path.sh
+-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/environment/path.dsv
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/local_setup.bash
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/local_setup.sh
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/local_setup.zsh
+-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/local_setup.dsv
+-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/package.dsv
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/ament_index/resource_index/packages/dummy_brain
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/cmake/dummy_brainConfig.cmake
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/cmake/dummy_brainConfig-version.cmake
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/package.xml

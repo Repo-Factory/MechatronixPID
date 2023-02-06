@@ -1,0 +1,214 @@
+[0.000000] (-) TimerEvent: {}
+[0.003152] (-) JobUnselected: {'identifier': 'dummy_sensor'}
+[0.003611] (-) JobUnselected: {'identifier': 'robot_types'}
+[0.003744] (dummy_brain) JobQueued: {'identifier': 'dummy_brain', 'dependencies': OrderedDict([('robot_types', '/home/conner/mechatronics/pid/install/robot_types')])}
+[0.003958] (dummy_brain) JobStarted: {'identifier': 'dummy_brain'}
+[0.286453] (dummy_brain) JobProgress: {'identifier': 'dummy_brain', 'progress': 'cmake'}
+[0.286642] (-) TimerEvent: {}
+[0.287994] (dummy_brain) Command: {'cmd': ['/usr/bin/cmake', '/home/conner/mechatronics/pid/dummy_brain', '-DCMAKE_INSTALL_PREFIX=/home/conner/mechatronics/pid/install/dummy_brain'], 'cwd': '/home/conner/mechatronics/pid/build/dummy_brain', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'conner'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/conner'), ('OLDPWD', '/home/conner/mechatronics/pid/robot_types'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/conner/mechatronics/pid/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'conner'), ('NAME', 'ConnerSurface'), ('WSL_INTEROP', '/run/WSL/9140_interop'), ('PULSE_SERVER', '/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/conner/apps/nvm:/mnt/c/conner/apps/nvm:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/conner/apps/Python/Python310/Scripts/:/mnt/c/conner/apps/Python/Python310/:/mnt/c/Users/conne/AppData/Local/Microsoft/WindowsApps:/mnt/c/conner/apps/vscode/bin:/mnt/c/Conner/Apps/nvm/v16.17.0:/mnt/c/Conner/Apps/nvm:/snap/bin'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/robot_types:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/conner/mechatronics/pid/build/dummy_brain'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/dummy_sensor:/opt/ros/foxy'), ('WSLENV', '')]), 'shell': False}
+[0.464595] (-) TimerEvent: {}
+[0.718395] (-) TimerEvent: {}
+[0.874069] (-) TimerEvent: {}
+[0.985719] (dummy_brain) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.986487] (-) TimerEvent: {}
+[1.248288] (-) TimerEvent: {}
+[1.408603] (-) TimerEvent: {}
+[1.584180] (-) TimerEvent: {}
+[1.716296] (dummy_brain) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[1.716729] (-) TimerEvent: {}
+[1.874261] (-) TimerEvent: {}
+[2.013427] (dummy_brain) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[2.013942] (-) TimerEvent: {}
+[2.194199] (-) TimerEvent: {}
+[2.354180] (-) TimerEvent: {}
+[2.394392] (dummy_brain) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[2.401127] (dummy_brain) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.514484] (-) TimerEvent: {}
+[2.684105] (-) TimerEvent: {}
+[2.844254] (-) TimerEvent: {}
+[3.014157] (-) TimerEvent: {}
+[3.127633] (dummy_brain) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.128328] (-) TimerEvent: {}
+[3.151000] (dummy_brain) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.153005] (dummy_brain) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.162135] (dummy_brain) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[3.327287] (-) TimerEvent: {}
+[3.434252] (-) TimerEvent: {}
+[3.489364] (dummy_brain) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.491240] (dummy_brain) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.594397] (-) TimerEvent: {}
+[3.787920] (dummy_brain) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.788226] (-) TimerEvent: {}
+[3.802217] (dummy_brain) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.803313] (dummy_brain) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.833623] (dummy_brain) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[3.866360] (dummy_brain) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[3.866894] (dummy_brain) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.041352] (-) TimerEvent: {}
+[4.109802] (dummy_brain) StdoutLine: {'line': b'-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[4.294765] (-) TimerEvent: {}
+[4.548555] (-) TimerEvent: {}
+[4.802628] (-) TimerEvent: {}
+[4.934237] (-) TimerEvent: {}
+[5.094396] (-) TimerEvent: {}
+[5.224268] (-) TimerEvent: {}
+[5.384266] (-) TimerEvent: {}
+[5.557926] (-) TimerEvent: {}
+[5.812376] (-) TimerEvent: {}
+[5.881696] (dummy_brain) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.908540] (dummy_brain) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[6.024313] (-) TimerEvent: {}
+[6.184374] (-) TimerEvent: {}
+[6.344222] (-) TimerEvent: {}
+[6.504398] (-) TimerEvent: {}
+[6.664379] (-) TimerEvent: {}
+[6.824403] (-) TimerEvent: {}
+[6.934466] (-) TimerEvent: {}
+[7.180954] (-) TimerEvent: {}
+[7.434576] (-) TimerEvent: {}
+[7.594022] (-) TimerEvent: {}
+[7.754353] (-) TimerEvent: {}
+[7.914556] (-) TimerEvent: {}
+[8.104280] (-) TimerEvent: {}
+[8.264198] (-) TimerEvent: {}
+[8.454316] (-) TimerEvent: {}
+[8.708284] (-) TimerEvent: {}
+[8.854397] (-) TimerEvent: {}
+[9.004248] (-) TimerEvent: {}
+[9.164245] (-) TimerEvent: {}
+[9.266363] (dummy_brain) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[9.267196] (-) TimerEvent: {}
+[9.384307] (-) TimerEvent: {}
+[9.544091] (-) TimerEvent: {}
+[9.694229] (-) TimerEvent: {}
+[9.854248] (-) TimerEvent: {}
+[10.014237] (-) TimerEvent: {}
+[10.174437] (-) TimerEvent: {}
+[10.428602] (-) TimerEvent: {}
+[10.654395] (-) TimerEvent: {}
+[10.814253] (-) TimerEvent: {}
+[10.974325] (-) TimerEvent: {}
+[11.228327] (-) TimerEvent: {}
+[11.384379] (-) TimerEvent: {}
+[11.574278] (-) TimerEvent: {}
+[11.734104] (-) TimerEvent: {}
+[11.894276] (-) TimerEvent: {}
+[12.104162] (-) TimerEvent: {}
+[12.257296] (dummy_brain) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[12.257952] (-) TimerEvent: {}
+[12.404114] (-) TimerEvent: {}
+[12.564441] (-) TimerEvent: {}
+[12.734263] (-) TimerEvent: {}
+[13.048174] (-) TimerEvent: {}
+[13.174204] (-) TimerEvent: {}
+[13.334152] (-) TimerEvent: {}
+[13.588238] (-) TimerEvent: {}
+[13.804071] (-) TimerEvent: {}
+[13.957396] (-) TimerEvent: {}
+[14.064159] (-) TimerEvent: {}
+[14.224290] (-) TimerEvent: {}
+[14.398004] (-) TimerEvent: {}
+[14.651904] (-) TimerEvent: {}
+[14.877386] (-) TimerEvent: {}
+[15.024204] (-) TimerEvent: {}
+[15.194769] (-) TimerEvent: {}
+[15.344432] (-) TimerEvent: {}
+[15.504222] (-) TimerEvent: {}
+[15.664321] (-) TimerEvent: {}
+[15.824308] (-) TimerEvent: {}
+[15.984132] (-) TimerEvent: {}
+[16.144041] (-) TimerEvent: {}
+[16.297906] (-) TimerEvent: {}
+[16.514111] (-) TimerEvent: {}
+[16.553869] (dummy_brain) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[16.639782] (dummy_brain) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[16.640224] (-) TimerEvent: {}
+[16.646550] (dummy_brain) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[16.650164] (dummy_brain) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[16.834342] (-) TimerEvent: {}
+[16.937271] (dummy_brain) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[16.937983] (-) TimerEvent: {}
+[16.938699] (dummy_brain) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[17.154319] (-) TimerEvent: {}
+[17.302120] (dummy_brain) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[17.302929] (-) TimerEvent: {}
+[17.303220] (dummy_brain) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[17.414132] (-) TimerEvent: {}
+[17.574204] (-) TimerEvent: {}
+[17.634417] (dummy_brain) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[17.635804] (dummy_brain) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[17.734286] (-) TimerEvent: {}
+[17.883984] (dummy_brain) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[17.884440] (-) TimerEvent: {}
+[17.885923] (dummy_brain) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[18.051059] (-) TimerEvent: {}
+[18.100586] (dummy_brain) StdoutLine: {'line': b'-- Found robot_types: 0.0.0 (/home/conner/mechatronics/pid/install/robot_types/share/robot_types/cmake)\n'}
+[18.204063] (-) TimerEvent: {}
+[18.205813] (dummy_brain) StdoutLine: {'line': b'-- Configuring done\n'}
+[18.225191] (dummy_brain) StdoutLine: {'line': b'-- Generating done\n'}
+[18.229847] (dummy_brain) StdoutLine: {'line': b'-- Build files have been written to: /home/conner/mechatronics/pid/build/dummy_brain\n'}
+[18.249177] (dummy_brain) CommandEnded: {'returncode': 0}
+[18.254940] (dummy_brain) JobProgress: {'identifier': 'dummy_brain', 'progress': 'build'}
+[18.255164] (dummy_brain) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/conner/mechatronics/pid/build/dummy_brain', '--', '-j8', '-l8'], 'cwd': '/home/conner/mechatronics/pid/build/dummy_brain', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'conner'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/conner'), ('OLDPWD', '/home/conner/mechatronics/pid/robot_types'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/conner/mechatronics/pid/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'conner'), ('NAME', 'ConnerSurface'), ('WSL_INTEROP', '/run/WSL/9140_interop'), ('PULSE_SERVER', '/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/conner/apps/nvm:/mnt/c/conner/apps/nvm:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/conner/apps/Python/Python310/Scripts/:/mnt/c/conner/apps/Python/Python310/:/mnt/c/Users/conne/AppData/Local/Microsoft/WindowsApps:/mnt/c/conner/apps/vscode/bin:/mnt/c/Conner/Apps/nvm/v16.17.0:/mnt/c/Conner/Apps/nvm:/snap/bin'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/robot_types:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/conner/mechatronics/pid/build/dummy_brain'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/dummy_sensor:/opt/ros/foxy'), ('WSLENV', '')]), 'shell': False}
+[18.302278] (dummy_brain) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target dummy_brain\x1b[0m\n'}
+[18.365183] (-) TimerEvent: {}
+[18.424707] (dummy_brain) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/dummy_brain.dir/src/dummy_brain.cpp.o\x1b[0m\n'}
+[18.524161] (-) TimerEvent: {}
+[18.684106] (-) TimerEvent: {}
+[18.837554] (-) TimerEvent: {}
+[19.014098] (-) TimerEvent: {}
+[19.174215] (-) TimerEvent: {}
+[19.404131] (-) TimerEvent: {}
+[19.564146] (-) TimerEvent: {}
+[19.718725] (-) TimerEvent: {}
+[19.954102] (-) TimerEvent: {}
+[20.114188] (-) TimerEvent: {}
+[20.308332] (-) TimerEvent: {}
+[20.562662] (-) TimerEvent: {}
+[20.724106] (-) TimerEvent: {}
+[20.884069] (-) TimerEvent: {}
+[21.044202] (-) TimerEvent: {}
+[21.204325] (-) TimerEvent: {}
+[21.364122] (-) TimerEvent: {}
+[21.524338] (-) TimerEvent: {}
+[21.664164] (-) TimerEvent: {}
+[21.824113] (-) TimerEvent: {}
+[21.984286] (-) TimerEvent: {}
+[22.144438] (-) TimerEvent: {}
+[22.317666] (-) TimerEvent: {}
+[22.504324] (-) TimerEvent: {}
+[22.827455] (-) TimerEvent: {}
+[23.024338] (-) TimerEvent: {}
+[23.144376] (-) TimerEvent: {}
+[23.374243] (-) TimerEvent: {}
+[23.458649] (dummy_brain) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable dummy_brain\x1b[0m\n'}
+[23.534109] (-) TimerEvent: {}
+[23.694214] (-) TimerEvent: {}
+[23.824232] (-) TimerEvent: {}
+[23.902999] (dummy_brain) StdoutLine: {'line': b'[100%] Built target dummy_brain\n'}
+[23.923708] (dummy_brain) CommandEnded: {'returncode': 0}
+[23.928305] (-) TimerEvent: {}
+[23.969305] (dummy_brain) JobProgress: {'identifier': 'dummy_brain', 'progress': 'install'}
+[23.986400] (dummy_brain) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/conner/mechatronics/pid/build/dummy_brain'], 'cwd': '/home/conner/mechatronics/pid/build/dummy_brain', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'conner'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/conner'), ('OLDPWD', '/home/conner/mechatronics/pid/robot_types'), ('ROS_PYTHON_VERSION', '3'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/conner/mechatronics/pid/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'conner'), ('NAME', 'ConnerSurface'), ('WSL_INTEROP', '/run/WSL/9140_interop'), ('PULSE_SERVER', '/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/conner/apps/nvm:/mnt/c/conner/apps/nvm:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/conner/apps/Python/Python310/Scripts/:/mnt/c/conner/apps/Python/Python310/:/mnt/c/Users/conne/AppData/Local/Microsoft/WindowsApps:/mnt/c/conner/apps/vscode/bin:/mnt/c/Conner/Apps/nvm/v16.17.0:/mnt/c/Conner/Apps/nvm:/snap/bin'), ('XDG_RUNTIME_DIR', '/mnt/wslg/runtime-dir'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/robot_types:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/conner/mechatronics/pid/build/dummy_brain'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/dummy_sensor:/opt/ros/foxy'), ('WSLENV', '')]), 'shell': False}
+[23.997582] (dummy_brain) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.998588] (dummy_brain) StdoutLine: {'line': b'-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/lib/dummy_brain/dummy_brain\n'}
+[24.002476] (dummy_brain) StdoutLine: {'line': b'-- Set runtime path of "/home/conner/mechatronics/pid/install/dummy_brain/lib/dummy_brain/dummy_brain" to ""\n'}
+[24.003173] (dummy_brain) StdoutLine: {'line': b'-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/ament_index/resource_index/package_run_dependencies/dummy_brain\n'}
+[24.004250] (dummy_brain) StdoutLine: {'line': b'-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/ament_index/resource_index/parent_prefix_path/dummy_brain\n'}
+[24.005001] (dummy_brain) StdoutLine: {'line': b'-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/environment/ament_prefix_path.sh\n'}
+[24.005722] (dummy_brain) StdoutLine: {'line': b'-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/environment/ament_prefix_path.dsv\n'}
+[24.006465] (dummy_brain) StdoutLine: {'line': b'-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/environment/path.sh\n'}
+[24.007153] (dummy_brain) StdoutLine: {'line': b'-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/environment/path.dsv\n'}
+[24.008110] (dummy_brain) StdoutLine: {'line': b'-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/local_setup.bash\n'}
+[24.008381] (dummy_brain) StdoutLine: {'line': b'-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/local_setup.sh\n'}
+[24.008995] (dummy_brain) StdoutLine: {'line': b'-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/local_setup.zsh\n'}
+[24.009755] (dummy_brain) StdoutLine: {'line': b'-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/local_setup.dsv\n'}
+[24.010335] (dummy_brain) StdoutLine: {'line': b'-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/package.dsv\n'}
+[24.011010] (dummy_brain) StdoutLine: {'line': b'-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/ament_index/resource_index/packages/dummy_brain\n'}
+[24.011616] (dummy_brain) StdoutLine: {'line': b'-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/cmake/dummy_brainConfig.cmake\n'}
+[24.011937] (dummy_brain) StdoutLine: {'line': b'-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/cmake/dummy_brainConfig-version.cmake\n'}
+[24.012625] (dummy_brain) StdoutLine: {'line': b'-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/package.xml\n'}
+[24.017275] (dummy_brain) CommandEnded: {'returncode': 0}
+[24.106912] (dummy_brain) JobEnded: {'identifier': 'dummy_brain', 'rc': 0}
+[24.110194] (-) TimerEvent: {}
+[24.110508] (-) EventReactorShutdown: {}

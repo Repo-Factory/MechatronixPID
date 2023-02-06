@@ -1,0 +1,5 @@
+[0.482s] Invoking command in '/home/conner/mechatronics/pid/build/dummy_sensor': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/dummy_sensor:/opt/ros/foxy /usr/bin/cmake --build /home/conner/mechatronics/pid/build/dummy_sensor -- -j8 -l8
+[0.531s] CMake Error: The source directory "/home/conner/mechatronics/pid/dummy_sensor" does not exist.
+[0.531s] Specify --help for usage, or press the help button on the CMake GUI.
+[0.532s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[0.538s] Invoked command in '/home/conner/mechatronics/pid/build/dummy_sensor' returned '2': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/dummy_sensor:/opt/ros/foxy /usr/bin/cmake --build /home/conner/mechatronics/pid/build/dummy_sensor -- -j8 -l8

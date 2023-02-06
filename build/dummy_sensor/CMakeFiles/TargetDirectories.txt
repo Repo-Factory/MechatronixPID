@@ -1,0 +1,10 @@
+/home/conner/mechatronics/pid/build/dummy_sensor/CMakeFiles/install/strip.dir
+/home/conner/mechatronics/pid/build/dummy_sensor/CMakeFiles/install/local.dir
+/home/conner/mechatronics/pid/build/dummy_sensor/CMakeFiles/edit_cache.dir
+/home/conner/mechatronics/pid/build/dummy_sensor/CMakeFiles/test.dir
+/home/conner/mechatronics/pid/build/dummy_sensor/CMakeFiles/install.dir
+/home/conner/mechatronics/pid/build/dummy_sensor/CMakeFiles/list_install_components.dir
+/home/conner/mechatronics/pid/build/dummy_sensor/CMakeFiles/rebuild_cache.dir
+/home/conner/mechatronics/pid/build/dummy_sensor/CMakeFiles/position_data.dir
+/home/conner/mechatronics/pid/build/dummy_sensor/CMakeFiles/dummy_sensor_uninstall.dir
+/home/conner/mechatronics/pid/build/dummy_sensor/CMakeFiles/uninstall.dir

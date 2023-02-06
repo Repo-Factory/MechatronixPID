@@ -1,0 +1,99 @@
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:37:42:[m[K [01;31m[Kerror: [m[K‘[01m[KTime[m[K’ is not a member of ‘[01m[Krobot_types::msg[m[K’
+   37 |   rclcpp::Subscription<robot_types::msg::[01;31m[KTime[m[K>::SharedPtr subscription_;
+      |                                          [01;31m[K^~~~[m[K
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:37:42:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/clock.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/timer.hpp:27[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:27[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:10[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/time.hpp:31:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Krclcpp::Time[m[K’
+   31 | class [01;36m[KTime[m[K
+      |       [01;36m[K^~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/time.hpp:7[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/time.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/clock.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/timer.hpp:27[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:27[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:10[m[K:
+[01m[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:135:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg::Time[m[K’
+  135 | using [01;36m[KTime[m[K =
+      |       [01;36m[K^~~~[m[K
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:37:42:[m[K [01;31m[Kerror: [m[K‘[01m[KTime[m[K’ is not a member of ‘[01m[Krobot_types::msg[m[K’
+   37 |   rclcpp::Subscription<robot_types::msg::[01;31m[KTime[m[K>::SharedPtr subscription_;
+      |                                          [01;31m[K^~~~[m[K
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:37:42:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+In file included from [01m[K/opt/ros/foxy/include/rclcpp/clock.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/timer.hpp:27[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:27[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:10[m[K:
+[01m[K/opt/ros/foxy/include/rclcpp/time.hpp:31:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Krclcpp::Time[m[K’
+   31 | class [01;36m[KTime[m[K
+      |       [01;36m[K^~~~[m[K
+In file included from [01m[K/opt/ros/foxy/include/builtin_interfaces/msg/time.hpp:7[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/time.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/clock.hpp:23[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/timer.hpp:27[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:27[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+                 from [01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:10[m[K:
+[01m[K/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp:135:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg::Time[m[K’
+  135 | using [01;36m[KTime[m[K =
+      |       [01;36m[K^~~~[m[K
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:37:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   37 |   rclcpp::Subscription<robot_types::msg::Time[01;31m[K>[m[K::SharedPtr subscription_;
+      |                                              [01;31m[K^[m[K
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:37:46:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:37:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   37 |   rclcpp::Subscription<robot_types::msg::Time>::[01;31m[KSharedPtr[m[K subscription_;
+      |                                                 [01;31m[K^~~~~~~~~[m[K
+      |                                                          [32m[K;[m[K
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:37:59:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ does not name a type; did you mean ‘[01m[Krcl_subscription_t[m[K’?
+   37 |   rclcpp::Subscription<robot_types::msg::Time>::SharedPtr [01;31m[Ksubscription_[m[K;
+      |                                                           [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                                           [32m[Krcl_subscription_t[m[K
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:31:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_subscription_t[m[K’?
+   31 |     [01;31m[Ksubscription_[m[K = this->create_subscription<robot_types::msg::Position>
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[Krcl_subscription_t[m[K
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::position_sensor_callback(robot_types::msg::Position_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:45:37:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst Controller[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+   45 |     printVector(msg->position_vector[01;31m[K)[m[K;
+      |                                     [01;31m[K^[m[K
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:48:10:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kvoid Controller::printVector(std::vector<int>)[m[K’
+   48 |     void [01;36m[KprintVector[m[K(vector<int> intVector)
+      |          [01;36m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/pid_controller.dir/build.make:63: CMakeFiles/pid_controller.dir/src/pid_controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/pid_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

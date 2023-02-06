@@ -1,0 +1,16 @@
+/home/conner/mechatronics/pid/install/dummy_sensor/lib/dummy_sensor/position_data
+/home/conner/mechatronics/pid/install/dummy_sensor/share/ament_index/resource_index/package_run_dependencies/dummy_sensor
+/home/conner/mechatronics/pid/install/dummy_sensor/share/ament_index/resource_index/parent_prefix_path/dummy_sensor
+/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/environment/ament_prefix_path.sh
+/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/environment/ament_prefix_path.dsv
+/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/environment/path.sh
+/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/environment/path.dsv
+/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/local_setup.bash
+/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/local_setup.sh
+/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/local_setup.zsh
+/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/local_setup.dsv
+/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/package.dsv
+/home/conner/mechatronics/pid/install/dummy_sensor/share/ament_index/resource_index/packages/dummy_sensor
+/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/cmake/dummy_sensorConfig.cmake
+/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/cmake/dummy_sensorConfig-version.cmake
+/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/package.xml

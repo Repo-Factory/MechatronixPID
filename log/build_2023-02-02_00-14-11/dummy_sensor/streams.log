@@ -1,0 +1,26 @@
+[0.483s] Invoking command in '/home/conner/mechatronics/pid/build/dummy_sensor': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/dummy_sensor:/opt/ros/foxy /usr/bin/cmake --build /home/conner/mechatronics/pid/build/dummy_sensor -- -j8 -l8
+[0.559s] [35m[1mScanning dependencies of target position_data[0m
+[0.616s] [ 50%] [32mBuilding CXX object CMakeFiles/position_data.dir/src/dummy_sensor.cpp.o[0m
+[7.665s] [100%] [32m[1mLinking CXX executable position_data[0m
+[8.286s] [100%] Built target position_data
+[8.324s] Invoked command in '/home/conner/mechatronics/pid/build/dummy_sensor' returned '0': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/dummy_sensor:/opt/ros/foxy /usr/bin/cmake --build /home/conner/mechatronics/pid/build/dummy_sensor -- -j8 -l8
+[8.420s] Invoking command in '/home/conner/mechatronics/pid/build/dummy_sensor': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/dummy_sensor:/opt/ros/foxy /usr/bin/cmake --install /home/conner/mechatronics/pid/build/dummy_sensor
+[8.440s] -- Install configuration: ""
+[8.440s] -- Installing: /home/conner/mechatronics/pid/install/dummy_sensor/lib/dummy_sensor/position_data
+[8.444s] -- Set runtime path of "/home/conner/mechatronics/pid/install/dummy_sensor/lib/dummy_sensor/position_data" to ""
+[8.445s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_sensor/share/ament_index/resource_index/package_run_dependencies/dummy_sensor
+[8.445s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_sensor/share/ament_index/resource_index/parent_prefix_path/dummy_sensor
+[8.446s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/environment/ament_prefix_path.sh
+[8.447s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/environment/ament_prefix_path.dsv
+[8.448s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/environment/path.sh
+[8.448s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/environment/path.dsv
+[8.450s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/local_setup.bash
+[8.450s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/local_setup.sh
+[8.450s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/local_setup.zsh
+[8.450s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/local_setup.dsv
+[8.451s] -- Installing: /home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/package.dsv
+[8.452s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_sensor/share/ament_index/resource_index/packages/dummy_sensor
+[8.453s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/cmake/dummy_sensorConfig.cmake
+[8.454s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/cmake/dummy_sensorConfig-version.cmake
+[8.456s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/package.xml
+[8.460s] Invoked command in '/home/conner/mechatronics/pid/build/dummy_sensor' returned '0': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/dummy_sensor:/opt/ros/foxy /usr/bin/cmake --install /home/conner/mechatronics/pid/build/dummy_sensor

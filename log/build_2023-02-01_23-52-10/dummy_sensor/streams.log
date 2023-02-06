@@ -1,0 +1,50 @@
+[0.053s] Invoking command in '/home/conner/mechatronics/pid/build/dummy_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/conner/mechatronics/pid/dummy_sensor -DCMAKE_INSTALL_PREFIX=/home/conner/mechatronics/pid/install/dummy_sensor
+[0.528s] -- The C compiler identification is GNU 9.4.0
+[1.361s] -- The CXX compiler identification is GNU 9.4.0
+[1.857s] -- Check for working C compiler: /usr/bin/cc
+[2.270s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.273s] -- Detecting C compiler ABI info
+[2.642s] -- Detecting C compiler ABI info - done
+[2.665s] -- Detecting C compile features
+[2.666s] -- Detecting C compile features - done
+[2.669s] -- Check for working CXX compiler: /usr/bin/c++
+[3.041s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.043s] -- Detecting CXX compiler ABI info
+[3.456s] -- Detecting CXX compiler ABI info - done
+[3.484s] -- Detecting CXX compile features
+[3.486s] -- Detecting CXX compile features - done
+[3.491s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[3.537s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[3.538s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.858s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[4.452s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.467s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[8.467s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[12.796s] -- Found FastRTPS: /opt/ros/foxy/include  
+[20.385s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[20.468s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[20.472s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[20.476s] -- Looking for pthread.h
+[20.851s] -- Looking for pthread.h - found
+[20.852s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[21.259s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[21.259s] -- Looking for pthread_create in pthreads
+[21.635s] -- Looking for pthread_create in pthreads - not found
+[21.635s] -- Looking for pthread_create in pthread
+[22.030s] -- Looking for pthread_create in pthread - found
+[22.032s] -- Found Threads: TRUE  
+[22.390s] -- Configuring done
+[22.404s] -- Generating done
+[22.409s] -- Build files have been written to: /home/conner/mechatronics/pid/build/dummy_sensor
+[22.430s] Invoked command in '/home/conner/mechatronics/pid/build/dummy_sensor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/conner/mechatronics/pid/dummy_sensor -DCMAKE_INSTALL_PREFIX=/home/conner/mechatronics/pid/install/dummy_sensor
+[22.438s] Invoking command in '/home/conner/mechatronics/pid/build/dummy_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/conner/mechatronics/pid/build/dummy_sensor -- -j8 -l8
+[22.503s] [35m[1mScanning dependencies of target position_data[0m
+[22.555s] [ 50%] [32mBuilding CXX object CMakeFiles/position_data.dir/src/dummy_sensor.cpp.o[0m
+[22.820s] [01m[K/home/conner/mechatronics/pid/dummy_sensor/src/dummy_sensor.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Krobot_types/msg/position.h: No such file or directory
+[22.821s]    10 | #include [01;31m[K"robot_types/msg/position.h"[m[K             // Custom message types defined in time_types package
+[22.821s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[22.822s] compilation terminated.
+[22.828s] make[2]: *** [CMakeFiles/position_data.dir/build.make:63: CMakeFiles/position_data.dir/src/dummy_sensor.cpp.o] Error 1
+[22.829s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/position_data.dir/all] Error 2
+[22.829s] make: *** [Makefile:141: all] Error 2
+[22.840s] Invoked command in '/home/conner/mechatronics/pid/build/dummy_sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/conner/mechatronics/pid/build/dummy_sensor -- -j8 -l8
