@@ -9,8 +9,8 @@
 
 #include "rclcpp/rclcpp.hpp"
 #include "robot_types/msg/position.hpp"         // Custom message types defined in robot_types pack
-// #include "/home/conner/mechatronics/pid/controller/scion_pid_controller.hpp"
- 
+#include "scion_pid_controller.hpp"
+
 using std::placeholders::_1;
 using std::placeholders::_2;
 using namespace std;
@@ -33,15 +33,15 @@ public:
         ("position_data", 10, std::bind(&Controller::position_sensor_callback, this, _1));
         desired_position_ = this->create_subscription<robot_types::msg::Position>
         ("desired_position", 10, std::bind(&Controller::desired_position_callback, this, _1));
-        // controller_ = Scion_Position_PID_Controller();
-        // controller_.getStatus();
+        controller_ = Scion_Position_PID_Controller();
+        controller_.getStatus();
     }
 
 private:
 
     rclcpp::Subscription<robot_types::msg::Position>::SharedPtr position_sensor_;
     rclcpp::Subscription<robot_types::msg::Position>::SharedPtr desired_position_;
-    // Scion_Position_PID_Controller controller_;
+    Scion_Position_PID_Controller controller_;
     vector<int> current_position_{0,0,0,0,0,0};
     vector<int> current_desired_position_{0,0,0,0,0,0};
 

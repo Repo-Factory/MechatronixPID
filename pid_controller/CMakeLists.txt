@@ -15,8 +15,14 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(robot_types REQUIRED)
 
-add_executable(pid_controller src/pid_controller_node.cpp)
+add_executable(pid_controller src/pid_controller_node.cpp
+                              src/pid_controller.cpp
+                              src/pid_params.cpp
+                              src/scion_pid_controller.cpp)
+
 ament_target_dependencies(pid_controller rclcpp robot_types)
+
+target_include_directories(pid_controller PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 install(TARGETS
   pid_controller

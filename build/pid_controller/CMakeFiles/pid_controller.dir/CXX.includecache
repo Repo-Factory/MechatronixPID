@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/conner/mechatronics/pid/helpers/vector_operations.hpp
+iostream
+-
+vector
+-
+cmath
+-
+
 /home/conner/mechatronics/pid/install/robot_types/include/robot_types/msg/detail/position__builder.hpp
 robot_types/msg/detail/position__struct.hpp
 /home/conner/mechatronics/pid/install/robot_types/include/robot_types/msg/detail/robot_types/msg/detail/position__struct.hpp
@@ -50,7 +58,39 @@ robot_types/msg/detail/position__builder.hpp
 robot_types/msg/detail/position__traits.hpp
 /home/conner/mechatronics/pid/install/robot_types/include/robot_types/msg/robot_types/msg/detail/position__traits.hpp
 
-/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp
+/home/conner/mechatronics/pid/pid_controller/include/pid_controller.hpp
+utility
+-
+vector
+-
+cmath
+-
+iostream
+-
+
+/home/conner/mechatronics/pid/pid_controller/include/pid_params.hpp
+map
+-
+string
+-
+
+/home/conner/mechatronics/pid/pid_controller/include/scion_pid_controller.hpp
+map
+-
+string
+-
+utility
+-
+tuple
+-
+pid_controller.hpp
+/home/conner/mechatronics/pid/pid_controller/include/pid_controller.hpp
+pid_params.hpp
+/home/conner/mechatronics/pid/pid_controller/include/pid_params.hpp
+../../helpers/vector_operations.hpp
+/home/conner/mechatronics/pid/helpers/vector_operations.hpp
+
+/home/conner/mechatronics/pid/pid_controller/src/pid_controller_node.cpp
 memory
 -
 string
@@ -71,6 +111,8 @@ rclcpp/rclcpp.hpp
 /home/conner/mechatronics/pid/pid_controller/src/rclcpp/rclcpp.hpp
 robot_types/msg/position.hpp
 /home/conner/mechatronics/pid/pid_controller/src/robot_types/msg/position.hpp
+scion_pid_controller.hpp
+/home/conner/mechatronics/pid/pid_controller/src/scion_pid_controller.hpp
 
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__builder.hpp
 builtin_interfaces/msg/detail/duration__struct.hpp

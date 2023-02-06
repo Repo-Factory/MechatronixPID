@@ -25,7 +25,7 @@ vector<T>& operator-=(vector<T> &lhs, const vector<T> &rhs)
 {
     if (lhs.size() != rhs.size())
         throw length_error("vectors must be same size to add");
-    for (auto i = 0; i < lhs.size(); ++i)
+    for (vector<double>::size_type i = 0; i < lhs.size(); ++i)
         lhs[i] -= rhs[i];
     return lhs;
 }
@@ -45,7 +45,7 @@ vector<T>& operator+=(vector<T> &lhs, const vector<T> &rhs)
 {
     if (lhs.size() != rhs.size())
         throw length_error("vectors must be same size to add");
-    for (auto i = 0; i < lhs.size(); ++i)
+    for (vector<double>::size_type i = 0; i < lhs.size(); ++i)
         lhs[i] += rhs[i];
     return lhs;
 }
@@ -63,7 +63,7 @@ vector<T> operator+ (vector<T> lhs, const vector<T> &rhs)
 template <typename T>
 vector<T> operator-(vector<T> lhs, const T &rhs) 
 {
-    for (auto i = 0; i < lhs.size(); ++i)
+    for (vector<double>::size_type i = 0; i < lhs.size(); ++i)
         lhs[i] -= rhs;
     return lhs;
 }
@@ -72,7 +72,7 @@ vector<T> operator-(vector<T> lhs, const T &rhs)
 template <typename T>
 vector<T> operator+(vector<T> lhs, const T &rhs) 
 {
-    for (auto i = 0; i < lhs.size(); ++i)
+    for (vector<double>::size_type i = 0; i < lhs.size(); ++i)
         lhs[i] += rhs;
     return lhs;
 }
@@ -83,7 +83,7 @@ template <typename T>
 bool operator<(vector<T> lhs, const T &rhs) 
 {
     bool lessThan = true;
-    for (auto i = 0; i < lhs.size(); ++i)
+    for (vector<double>::size_type i = 0; i < lhs.size(); ++i)
         if (lhs[i] > rhs)
         {
             lessThan = false;
@@ -96,7 +96,7 @@ template <typename T>
 bool operator>(vector<T> lhs, const T &rhs) 
 {
     bool greaterThan = true;
-    for (auto i = 0; i < lhs.size(); ++i)
+    for (vector<double>::size_type i = 0; i < lhs.size(); ++i)
         if (lhs[i] < rhs)
         {
             greaterThan = false;
@@ -108,7 +108,7 @@ bool operator>(vector<T> lhs, const T &rhs)
 template <typename T>
 vector<T> operator*(vector<T> lhs, const T &rhs) 
 {
-    for (auto i = 0; i < lhs.size(); ++i)
+    for (vector<double>::size_type i = 0; i < lhs.size(); ++i)
         lhs[i] *= rhs;
     return lhs;
 }
@@ -122,7 +122,7 @@ vector<T> operator*(vector<vector<T>> lhs, const vector<T> &rhs)
     for (vector<T> row : lhs)
     {
         T newElement = 0;
-        for (auto i = 0; i < rhs.size(); i++)
+        for (vector<double>::size_type i = 0; i < rhs.size(); i++)
         {
             newElement += row[i] * rhs[i];
         }     

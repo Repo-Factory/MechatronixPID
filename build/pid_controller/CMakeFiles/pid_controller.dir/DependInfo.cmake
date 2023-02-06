@@ -5,6 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp" "/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles/pid_controller.dir/src/pid_controller.cpp.o"
+  "/home/conner/mechatronics/pid/pid_controller/src/pid_controller_node.cpp" "/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.o"
+  "/home/conner/mechatronics/pid/pid_controller/src/pid_params.cpp" "/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles/pid_controller.dir/src/pid_params.cpp.o"
+  "/home/conner/mechatronics/pid/pid_controller/src/scion_pid_controller.cpp" "/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles/pid_controller.dir/src/scion_pid_controller.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,6 +20,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/conner/mechatronics/pid/pid_controller/include"
   "/opt/ros/foxy/include"
   "/home/conner/mechatronics/pid/install/robot_types/include"
   )

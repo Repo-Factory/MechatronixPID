@@ -57,9 +57,22 @@ include CMakeFiles/pid_controller.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/pid_controller.dir/flags.make
 
+CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.o: CMakeFiles/pid_controller.dir/flags.make
+CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.o: /home/conner/mechatronics/pid/pid_controller/src/pid_controller_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.o -c /home/conner/mechatronics/pid/pid_controller/src/pid_controller_node.cpp
+
+CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/conner/mechatronics/pid/pid_controller/src/pid_controller_node.cpp > CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.i
+
+CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/conner/mechatronics/pid/pid_controller/src/pid_controller_node.cpp -o CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.s
+
 CMakeFiles/pid_controller.dir/src/pid_controller.cpp.o: CMakeFiles/pid_controller.dir/flags.make
 CMakeFiles/pid_controller.dir/src/pid_controller.cpp.o: /home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pid_controller.dir/src/pid_controller.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pid_controller.dir/src/pid_controller.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pid_controller.dir/src/pid_controller.cpp.o -c /home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp
 
 CMakeFiles/pid_controller.dir/src/pid_controller.cpp.i: cmake_force
@@ -70,14 +83,46 @@ CMakeFiles/pid_controller.dir/src/pid_controller.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pid_controller.dir/src/pid_controller.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp -o CMakeFiles/pid_controller.dir/src/pid_controller.cpp.s
 
+CMakeFiles/pid_controller.dir/src/pid_params.cpp.o: CMakeFiles/pid_controller.dir/flags.make
+CMakeFiles/pid_controller.dir/src/pid_params.cpp.o: /home/conner/mechatronics/pid/pid_controller/src/pid_params.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pid_controller.dir/src/pid_params.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pid_controller.dir/src/pid_params.cpp.o -c /home/conner/mechatronics/pid/pid_controller/src/pid_params.cpp
+
+CMakeFiles/pid_controller.dir/src/pid_params.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pid_controller.dir/src/pid_params.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/conner/mechatronics/pid/pid_controller/src/pid_params.cpp > CMakeFiles/pid_controller.dir/src/pid_params.cpp.i
+
+CMakeFiles/pid_controller.dir/src/pid_params.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pid_controller.dir/src/pid_params.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/conner/mechatronics/pid/pid_controller/src/pid_params.cpp -o CMakeFiles/pid_controller.dir/src/pid_params.cpp.s
+
+CMakeFiles/pid_controller.dir/src/scion_pid_controller.cpp.o: CMakeFiles/pid_controller.dir/flags.make
+CMakeFiles/pid_controller.dir/src/scion_pid_controller.cpp.o: /home/conner/mechatronics/pid/pid_controller/src/scion_pid_controller.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/pid_controller.dir/src/scion_pid_controller.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/pid_controller.dir/src/scion_pid_controller.cpp.o -c /home/conner/mechatronics/pid/pid_controller/src/scion_pid_controller.cpp
+
+CMakeFiles/pid_controller.dir/src/scion_pid_controller.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/pid_controller.dir/src/scion_pid_controller.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/conner/mechatronics/pid/pid_controller/src/scion_pid_controller.cpp > CMakeFiles/pid_controller.dir/src/scion_pid_controller.cpp.i
+
+CMakeFiles/pid_controller.dir/src/scion_pid_controller.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/pid_controller.dir/src/scion_pid_controller.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/conner/mechatronics/pid/pid_controller/src/scion_pid_controller.cpp -o CMakeFiles/pid_controller.dir/src/scion_pid_controller.cpp.s
+
 # Object files for target pid_controller
 pid_controller_OBJECTS = \
-"CMakeFiles/pid_controller.dir/src/pid_controller.cpp.o"
+"CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.o" \
+"CMakeFiles/pid_controller.dir/src/pid_controller.cpp.o" \
+"CMakeFiles/pid_controller.dir/src/pid_params.cpp.o" \
+"CMakeFiles/pid_controller.dir/src/scion_pid_controller.cpp.o"
 
 # External object files for target pid_controller
 pid_controller_EXTERNAL_OBJECTS =
 
+pid_controller: CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.o
 pid_controller: CMakeFiles/pid_controller.dir/src/pid_controller.cpp.o
+pid_controller: CMakeFiles/pid_controller.dir/src/pid_params.cpp.o
+pid_controller: CMakeFiles/pid_controller.dir/src/scion_pid_controller.cpp.o
 pid_controller: CMakeFiles/pid_controller.dir/build.make
 pid_controller: /opt/ros/foxy/lib/librclcpp.so
 pid_controller: /home/conner/mechatronics/pid/install/robot_types/lib/librobot_types__rosidl_typesupport_introspection_c.so
@@ -132,7 +177,7 @@ pid_controller: /opt/ros/foxy/lib/librcpputils.so
 pid_controller: /opt/ros/foxy/lib/librosidl_runtime_c.so
 pid_controller: /opt/ros/foxy/lib/librcutils.so
 pid_controller: CMakeFiles/pid_controller.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable pid_controller"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable pid_controller"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pid_controller.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

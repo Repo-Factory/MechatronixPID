@@ -233,6 +233,87 @@ src/pid_controller.cpp.s:
 	$(MAKE) -f CMakeFiles/pid_controller.dir/build.make CMakeFiles/pid_controller.dir/src/pid_controller.cpp.s
 .PHONY : src/pid_controller.cpp.s
 
+src/pid_controller_node.o: src/pid_controller_node.cpp.o
+
+.PHONY : src/pid_controller_node.o
+
+# target to build an object file
+src/pid_controller_node.cpp.o:
+	$(MAKE) -f CMakeFiles/pid_controller.dir/build.make CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.o
+.PHONY : src/pid_controller_node.cpp.o
+
+src/pid_controller_node.i: src/pid_controller_node.cpp.i
+
+.PHONY : src/pid_controller_node.i
+
+# target to preprocess a source file
+src/pid_controller_node.cpp.i:
+	$(MAKE) -f CMakeFiles/pid_controller.dir/build.make CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.i
+.PHONY : src/pid_controller_node.cpp.i
+
+src/pid_controller_node.s: src/pid_controller_node.cpp.s
+
+.PHONY : src/pid_controller_node.s
+
+# target to generate assembly for a file
+src/pid_controller_node.cpp.s:
+	$(MAKE) -f CMakeFiles/pid_controller.dir/build.make CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.s
+.PHONY : src/pid_controller_node.cpp.s
+
+src/pid_params.o: src/pid_params.cpp.o
+
+.PHONY : src/pid_params.o
+
+# target to build an object file
+src/pid_params.cpp.o:
+	$(MAKE) -f CMakeFiles/pid_controller.dir/build.make CMakeFiles/pid_controller.dir/src/pid_params.cpp.o
+.PHONY : src/pid_params.cpp.o
+
+src/pid_params.i: src/pid_params.cpp.i
+
+.PHONY : src/pid_params.i
+
+# target to preprocess a source file
+src/pid_params.cpp.i:
+	$(MAKE) -f CMakeFiles/pid_controller.dir/build.make CMakeFiles/pid_controller.dir/src/pid_params.cpp.i
+.PHONY : src/pid_params.cpp.i
+
+src/pid_params.s: src/pid_params.cpp.s
+
+.PHONY : src/pid_params.s
+
+# target to generate assembly for a file
+src/pid_params.cpp.s:
+	$(MAKE) -f CMakeFiles/pid_controller.dir/build.make CMakeFiles/pid_controller.dir/src/pid_params.cpp.s
+.PHONY : src/pid_params.cpp.s
+
+src/scion_pid_controller.o: src/scion_pid_controller.cpp.o
+
+.PHONY : src/scion_pid_controller.o
+
+# target to build an object file
+src/scion_pid_controller.cpp.o:
+	$(MAKE) -f CMakeFiles/pid_controller.dir/build.make CMakeFiles/pid_controller.dir/src/scion_pid_controller.cpp.o
+.PHONY : src/scion_pid_controller.cpp.o
+
+src/scion_pid_controller.i: src/scion_pid_controller.cpp.i
+
+.PHONY : src/scion_pid_controller.i
+
+# target to preprocess a source file
+src/scion_pid_controller.cpp.i:
+	$(MAKE) -f CMakeFiles/pid_controller.dir/build.make CMakeFiles/pid_controller.dir/src/scion_pid_controller.cpp.i
+.PHONY : src/scion_pid_controller.cpp.i
+
+src/scion_pid_controller.s: src/scion_pid_controller.cpp.s
+
+.PHONY : src/scion_pid_controller.s
+
+# target to generate assembly for a file
+src/scion_pid_controller.cpp.s:
+	$(MAKE) -f CMakeFiles/pid_controller.dir/build.make CMakeFiles/pid_controller.dir/src/scion_pid_controller.cpp.s
+.PHONY : src/scion_pid_controller.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -252,6 +333,15 @@ help:
 	@echo "... src/pid_controller.o"
 	@echo "... src/pid_controller.i"
 	@echo "... src/pid_controller.s"
+	@echo "... src/pid_controller_node.o"
+	@echo "... src/pid_controller_node.i"
+	@echo "... src/pid_controller_node.s"
+	@echo "... src/pid_params.o"
+	@echo "... src/pid_params.i"
+	@echo "... src/pid_params.s"
+	@echo "... src/scion_pid_controller.o"
+	@echo "... src/scion_pid_controller.i"
+	@echo "... src/scion_pid_controller.s"
 .PHONY : help
 
 
