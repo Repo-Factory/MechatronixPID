@@ -16,9 +16,9 @@ class PID_Controller
         double k_d;
         double i_min;
         double i_max;
-        double cmd_min;
-        double cmd_max;
-        double cmd_offset;
+        double ctrl_val_min;
+        double ctrl_val_max;
+        double ctrl_val_offset;
         bool angle_wrap;
         double integral = 0.0;
         double previous_error = 0.0;
@@ -30,17 +30,19 @@ class PID_Controller
             double k_p, 
             double k_i, 
             double k_d, 
-            double i_min=1.0, 
-            double i_max=-1.0, 
-            double cmd_min=1.0, 
-            double cmd_max=-1.0, 
-            double cmd_offset=0.0, 
+            double i_min=-1.0, 
+            double i_max=1.0, 
+            double ctrl_val_min=-1.0, 
+            double ctrl_val_max=1.0, 
+            double ctrl_val_offset=0.0, 
             bool angle_wrap=false
         );
    
         void set_gains(double k_p, double k_i, double k_d);
 
         pair<double, double> update(double set_point, double process_point, double dt);
-    
+
+        void getStatus();
+
     private:
 };
