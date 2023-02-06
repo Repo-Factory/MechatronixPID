@@ -1,0 +1,8 @@
+CMake Error at CMakeLists.txt:18 (target_link_directories):
+  target_link_directories called with incorrect number of arguments
+
+
+CMake Error at CMakeLists.txt:19 (target_link_directories):
+  target_link_directories called with incorrect number of arguments
+
+

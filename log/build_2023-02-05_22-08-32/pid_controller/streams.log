@@ -1,0 +1,12 @@
+[0.375s] Invoking command in '/home/conner/mechatronics/pid/build/pid_controller': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/conner/mechatronics/pid/build/pid_controller -- -j8 -l8
+[0.448s] CMake Error at CMakeLists.txt:19:
+[0.449s]   Parse error.  Expected "(", got newline with text "
+[0.449s] 
+[0.449s]   ".
+[0.449s] 
+[0.449s] 
+[0.450s] -- Configuring incomplete, errors occurred!
+[0.450s] See also "/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles/CMakeOutput.log".
+[0.450s] See also "/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles/CMakeError.log".
+[0.455s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[0.461s] Invoked command in '/home/conner/mechatronics/pid/build/pid_controller' returned '2': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/conner/mechatronics/pid/build/pid_controller -- -j8 -l8

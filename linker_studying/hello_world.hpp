@@ -2,4 +2,5 @@
 #include <iostream>
 using namespace std;
 
-void printVector(vector<double> vector);
+template <typename T>
+void printVector(vector<T> vector);

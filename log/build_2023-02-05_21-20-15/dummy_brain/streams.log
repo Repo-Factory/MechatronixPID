@@ -1,0 +1,22 @@
+[0.379s] Invoking command in '/home/conner/mechatronics/pid/build/dummy_brain': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain /usr/bin/cmake --build /home/conner/mechatronics/pid/build/dummy_brain -- -j8 -l8
+[0.462s] [100%] Built target dummy_brain
+[0.482s] Invoked command in '/home/conner/mechatronics/pid/build/dummy_brain' returned '0': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain /usr/bin/cmake --build /home/conner/mechatronics/pid/build/dummy_brain -- -j8 -l8
+[0.536s] Invoking command in '/home/conner/mechatronics/pid/build/dummy_brain': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain /usr/bin/cmake --install /home/conner/mechatronics/pid/build/dummy_brain
+[0.546s] -- Install configuration: ""
+[0.547s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/lib/dummy_brain/dummy_brain
+[0.548s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/ament_index/resource_index/package_run_dependencies/dummy_brain
+[0.549s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/ament_index/resource_index/parent_prefix_path/dummy_brain
+[0.549s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/environment/ament_prefix_path.sh
+[0.550s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/environment/ament_prefix_path.dsv
+[0.550s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/environment/path.sh
+[0.551s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/environment/path.dsv
+[0.553s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/local_setup.bash
+[0.553s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/local_setup.sh
+[0.553s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/local_setup.zsh
+[0.554s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/local_setup.dsv
+[0.554s] -- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/package.dsv
+[0.555s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/ament_index/resource_index/packages/dummy_brain
+[0.556s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/cmake/dummy_brainConfig.cmake
+[0.557s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/cmake/dummy_brainConfig-version.cmake
+[0.558s] -- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/package.xml
+[0.565s] Invoked command in '/home/conner/mechatronics/pid/build/dummy_brain' returned '0': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain /usr/bin/cmake --install /home/conner/mechatronics/pid/build/dummy_brain

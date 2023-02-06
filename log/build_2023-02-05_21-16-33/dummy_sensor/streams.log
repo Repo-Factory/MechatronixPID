@@ -1,0 +1,5 @@
+[0.267s] Invoking command in '/home/conner/mechatronics/pid/build/dummy_sensor': AMENT_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages /usr/bin/cmake --build /home/conner/mechatronics/pid/build/dummy_sensor -- -j8 -l8
+[0.592s] [35m[1mScanning dependencies of target position_data[0m
+[0.660s] [ 50%] [32mBuilding CXX object CMakeFiles/position_data.dir/src/dummy_sensor.cpp.o[0m
+[13.332s] [100%] [32m[1mLinking CXX executable position_data[0m
+[13.958s] [100%] Built target position_data

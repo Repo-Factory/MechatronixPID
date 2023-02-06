@@ -1,0 +1,24 @@
+[0.349s] Invoking command in '/home/conner/mechatronics/pid/build/pid_controller': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain /usr/bin/cmake --build /home/conner/mechatronics/pid/build/pid_controller -- -j8 -l8
+[0.396s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.430s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.693s] Traceback (most recent call last):
+[0.693s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[0.693s]     from ament_package.templates import get_environment_hook_template_path
+[0.693s] ModuleNotFoundError: No module named 'ament_package'
+[0.723s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[0.723s]   execute_process(/usr/bin/python3
+[0.723s]   /opt/ros/foxy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[0.723s]   /home/conner/mechatronics/pid/build/pid_controller/ament_cmake_package_templates/templates.cmake)
+[0.723s]   returned error code 1
+[0.724s] Call Stack (most recent call first):
+[0.724s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.724s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.724s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.724s]   CMakeLists.txt:15 (find_package)
+[0.725s] 
+[0.725s] 
+[0.725s] -- Configuring incomplete, errors occurred!
+[0.726s] See also "/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles/CMakeOutput.log".
+[0.726s] See also "/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles/CMakeError.log".
+[0.728s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[0.734s] Invoked command in '/home/conner/mechatronics/pid/build/pid_controller' returned '2': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain /usr/bin/cmake --build /home/conner/mechatronics/pid/build/pid_controller -- -j8 -l8

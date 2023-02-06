@@ -1,0 +1,10 @@
+CMake Error at CMakeLists.txt:19:
+  Parse error.  Expected "(", got newline with text "
+
+  ".
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles/CMakeOutput.log".
+See also "/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles/CMakeError.log".
+make: *** [Makefile:266: cmake_check_build_system] Error 1

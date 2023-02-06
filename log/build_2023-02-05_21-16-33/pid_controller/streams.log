@@ -1,0 +1,24 @@
+[0.463s] Invoking command in '/home/conner/mechatronics/pid/build/pid_controller': AMENT_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages /usr/bin/cmake --build /home/conner/mechatronics/pid/build/pid_controller -- -j8 -l8
+[0.546s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.633s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.376s] Traceback (most recent call last):
+[1.376s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[1.376s]     from ament_package.templates import get_environment_hook_template_path
+[1.376s] ModuleNotFoundError: No module named 'ament_package'
+[1.416s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[1.417s]   execute_process(/usr/bin/python3
+[1.417s]   /opt/ros/foxy/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[1.417s]   /home/conner/mechatronics/pid/build/pid_controller/ament_cmake_package_templates/templates.cmake)
+[1.417s]   returned error code 1
+[1.417s] Call Stack (most recent call first):
+[1.417s]   /opt/ros/foxy/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[1.418s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[1.418s]   /opt/ros/foxy/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[1.418s]   CMakeLists.txt:14 (find_package)
+[1.419s] 
+[1.419s] 
+[1.419s] -- Configuring incomplete, errors occurred!
+[1.419s] See also "/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles/CMakeOutput.log".
+[1.419s] See also "/home/conner/mechatronics/pid/build/pid_controller/CMakeFiles/CMakeError.log".
+[1.422s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[1.426s] Invoked command in '/home/conner/mechatronics/pid/build/pid_controller' returned '2': AMENT_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages /usr/bin/cmake --build /home/conner/mechatronics/pid/build/pid_controller -- -j8 -l8
