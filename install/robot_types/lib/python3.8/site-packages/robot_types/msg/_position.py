@@ -60,18 +60,18 @@ class Position(metaclass=Metaclass_Position):
     ]
 
     _fields_and_field_types = {
-        'position_vector': 'sequence<int32>',
+        'position_vector': 'sequence<double>',
     }
 
     SLOT_TYPES = (
-        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('int32')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('double')),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.position_vector = array.array('i', kwargs.get('position_vector', []))
+        self.position_vector = array.array('d', kwargs.get('position_vector', []))
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -119,8 +119,8 @@ class Position(metaclass=Metaclass_Position):
     @position_vector.setter
     def position_vector(self, value):
         if isinstance(value, array.array):
-            assert value.typecode == 'i', \
-                "The 'position_vector' array.array() must have the type code of 'i'"
+            assert value.typecode == 'd', \
+                "The 'position_vector' array.array() must have the type code of 'd'"
             self._position_vector = value
             return
         if __debug__:
@@ -134,7 +134,7 @@ class Position(metaclass=Metaclass_Position):
                   isinstance(value, UserList)) and
                  not isinstance(value, str) and
                  not isinstance(value, UserString) and
-                 all(isinstance(v, int) for v in value) and
-                 all(val >= -2147483648 and val < 2147483648 for val in value)), \
-                "The 'position_vector' field must be a set or sequence and each value of type 'int' and each integer in [-2147483648, 2147483647]"
-        self._position_vector = array.array('i', value)
+                 all(isinstance(v, float) for v in value) and
+                 True), \
+                "The 'position_vector' field must be a set or sequence and each value of type 'float'"
+        self._position_vector = array.array('d', value)

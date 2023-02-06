@@ -22,7 +22,7 @@ robot_types__msg__Position__init(robot_types__msg__Position * msg)
     return false;
   }
   // position_vector
-  if (!rosidl_runtime_c__int32__Sequence__init(&msg->position_vector, 0)) {
+  if (!rosidl_runtime_c__double__Sequence__init(&msg->position_vector, 0)) {
     robot_types__msg__Position__fini(msg);
     return false;
   }
@@ -36,7 +36,7 @@ robot_types__msg__Position__fini(robot_types__msg__Position * msg)
     return;
   }
   // position_vector
-  rosidl_runtime_c__int32__Sequence__fini(&msg->position_vector);
+  rosidl_runtime_c__double__Sequence__fini(&msg->position_vector);
 }
 
 bool
@@ -46,7 +46,7 @@ robot_types__msg__Position__are_equal(const robot_types__msg__Position * lhs, co
     return false;
   }
   // position_vector
-  if (!rosidl_runtime_c__int32__Sequence__are_equal(
+  if (!rosidl_runtime_c__double__Sequence__are_equal(
       &(lhs->position_vector), &(rhs->position_vector)))
   {
     return false;
@@ -63,7 +63,7 @@ robot_types__msg__Position__copy(
     return false;
   }
   // position_vector
-  if (!rosidl_runtime_c__int32__Sequence__copy(
+  if (!rosidl_runtime_c__double__Sequence__copy(
       &(input->position_vector), &(output->position_vector)))
   {
     return false;

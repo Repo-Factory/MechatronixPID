@@ -38,7 +38,7 @@ void Position__rosidl_typesupport_introspection_c__Position_fini_function(void *
 static rosidl_typesupport_introspection_c__MessageMember Position__rosidl_typesupport_introspection_c__Position_message_member_array[1] = {
   {
     "position_vector",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     true,  // is array

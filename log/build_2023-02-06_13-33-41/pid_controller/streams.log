@@ -1,0 +1,12 @@
+[0.190s] Invoking command in '/home/conner/mechatronics/pid/build/pid_controller': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/conner/mechatronics/pid/build/pid_controller -- -j8 -l8
+[0.236s] [35m[1mScanning dependencies of target pid_controller[0m
+[0.267s] [ 20%] [32mBuilding CXX object CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.o[0m
+[2.485s] [01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller_node.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[2.485s] [01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller_node.cpp:37:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Scion_Position_PID_Controller[m[K’ has no member named ‘[01m[KetStatus[m[K’; did you mean ‘[01m[KgetStatus[m[K’?
+[2.485s]    37 |         controller_.[01;31m[KetStatus[m[K();
+[2.485s]       |                     [01;31m[K^~~~~~~~[m[K
+[2.485s]       |                     [32m[KgetStatus[m[K
+[4.792s] make[2]: *** [CMakeFiles/pid_controller.dir/build.make:63: CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.o] Error 1
+[4.792s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/pid_controller.dir/all] Error 2
+[4.792s] make: *** [Makefile:141: all] Error 2
+[4.796s] Invoked command in '/home/conner/mechatronics/pid/build/pid_controller' returned '2': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/conner/mechatronics/pid/build/pid_controller -- -j8 -l8

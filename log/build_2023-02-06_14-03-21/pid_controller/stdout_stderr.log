@@ -1,0 +1,24 @@
+[35m[1mScanning dependencies of target pid_controller[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/pid_controller.dir/src/scion_pid_controller.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/pid_controller.dir/src/pid_params.cpp.o[0m
+[ 80%] [32m[1mLinking CXX executable pid_controller[0m
+[100%] Built target pid_controller
+-- Install configuration: ""
+-- Installing: /home/conner/mechatronics/pid/install/pid_controller/lib/pid_controller/pid_controller
+-- Set runtime path of "/home/conner/mechatronics/pid/install/pid_controller/lib/pid_controller/pid_controller" to ""
+-- Up-to-date: /home/conner/mechatronics/pid/install/pid_controller/share/ament_index/resource_index/package_run_dependencies/pid_controller
+-- Up-to-date: /home/conner/mechatronics/pid/install/pid_controller/share/ament_index/resource_index/parent_prefix_path/pid_controller
+-- Up-to-date: /home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/environment/ament_prefix_path.sh
+-- Up-to-date: /home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/environment/path.sh
+-- Up-to-date: /home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/environment/path.dsv
+-- Up-to-date: /home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/local_setup.bash
+-- Up-to-date: /home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/local_setup.sh
+-- Up-to-date: /home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/local_setup.zsh
+-- Up-to-date: /home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/local_setup.dsv
+-- Installing: /home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/package.dsv
+-- Up-to-date: /home/conner/mechatronics/pid/install/pid_controller/share/ament_index/resource_index/packages/pid_controller
+-- Up-to-date: /home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/cmake/pid_controllerConfig.cmake
+-- Up-to-date: /home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/cmake/pid_controllerConfig-version.cmake
+-- Up-to-date: /home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/package.xml

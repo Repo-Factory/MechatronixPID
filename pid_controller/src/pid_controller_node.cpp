@@ -33,7 +33,7 @@ public:
         ("position_data", 10, std::bind(&Controller::position_sensor_callback, this, _1));
         desired_position_ = this->create_subscription<robot_types::msg::Position>
         ("desired_position", 10, std::bind(&Controller::desired_position_callback, this, _1));
-        controller_ = Scion_Position_PID_Controller();
+        controller_ = Scion_Position_PID_Controller(pid_params_object_.get_pid_params());
         controller_.getStatus();
     }
 
@@ -42,8 +42,9 @@ private:
     rclcpp::Subscription<robot_types::msg::Position>::SharedPtr position_sensor_;
     rclcpp::Subscription<robot_types::msg::Position>::SharedPtr desired_position_;
     Scion_Position_PID_Controller controller_;
-    vector<int> current_position_{0,0,0,0,0,0};
-    vector<int> current_desired_position_{0,0,0,0,0,0};
+    PID_Params pid_params_object_;
+    vector<double> current_position_{0.0,0.0,0.0,0.0,0.0,0.0};
+    vector<double> current_desired_position_{0.0,0.0,0.0,0.0,0.0,0.0};
 
     void position_sensor_callback(const robot_types::msg::Position::SharedPtr msg)
     /** 
@@ -65,21 +66,22 @@ private:
          RCLCPP_INFO(this->get_logger(), "Received Desired Position Data:");
          printVector(msg->position_vector);
          this->current_desired_position_ = msg->position_vector; 
-        //  controller_.update(current_position_, current_desired_position_);
+         controller_.update(current_position_, current_desired_position_);
+         controller_.getStatus();
     }
 
-    void printVector(vector<int> intVector)
+    void printVector(vector<double> doubleVector)
     {
-        for (int number : intVector)
+        for (double number : doubleVector)
         {
             std::cout << number << " " << endl;
         }
     }
 
-    vector<int> getError(vector<int> desired_position, vector<int> current_position) 
+    vector<double> getError(vector<double> desired_position, vector<double> current_position) 
     {
-        vector<int> errorVector{0,0,0,0,0,0};
-        for (auto i = 0; i < (int)desired_position.size(); i++) 
+        vector<double> errorVector{0.0,0.0,0.0,0.0,0.0,0.0};
+        for (auto i = 0; i < (double)desired_position.size(); i++) 
         {
             errorVector[i] = desired_position[i] - current_position[i];
         }

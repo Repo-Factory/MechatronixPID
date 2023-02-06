@@ -45,12 +45,12 @@ struct Position_
 
   // field types and members
   using _position_vector_type =
-    std::vector<int32_t, typename ContainerAllocator::template rebind<int32_t>::other>;
+    std::vector<double, typename ContainerAllocator::template rebind<double>::other>;
   _position_vector_type position_vector;
 
   // setters for named parameter idiom
   Type & set__position_vector(
-    const std::vector<int32_t, typename ContainerAllocator::template rebind<int32_t>::other> & _arg)
+    const std::vector<double, typename ContainerAllocator::template rebind<double>::other> & _arg)
   {
     this->position_vector = _arg;
     return *this;

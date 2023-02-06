@@ -1,0 +1,10 @@
+[35m[1mScanning dependencies of target pid_controller[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.o[0m
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller_node.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller_node.cpp:37:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass Scion_Position_PID_Controller[m[K’ has no member named ‘[01m[KetStatus[m[K’; did you mean ‘[01m[KgetStatus[m[K’?
+   37 |         controller_.[01;31m[KetStatus[m[K();
+      |                     [01;31m[K^~~~~~~~[m[K
+      |                     [32m[KgetStatus[m[K
+make[2]: *** [CMakeFiles/pid_controller.dir/build.make:63: CMakeFiles/pid_controller.dir/src/pid_controller_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/pid_controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

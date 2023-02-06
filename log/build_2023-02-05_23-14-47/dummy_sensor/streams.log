@@ -1,0 +1,17 @@
+[0.205s] Invoking command in '/home/conner/mechatronics/pid/build/dummy_sensor': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/conner/mechatronics/pid/build/dummy_sensor -- -j8 -l8
+[0.237s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.262s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.469s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.609s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.614s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[3.559s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.718s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[3.727s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.054s] -- Found robot_types: 0.0.0 (/home/conner/mechatronics/pid/install/robot_types/share/robot_types/cmake)
+[4.135s] -- Configuring done
+[4.154s] -- Generating done
+[4.160s] -- Build files have been written to: /home/conner/mechatronics/pid/build/dummy_sensor
+[4.213s] [35m[1mScanning dependencies of target position_data[0m
+[4.318s] [ 50%] [32mBuilding CXX object CMakeFiles/position_data.dir/src/dummy_sensor.cpp.o[0m
+[8.507s] [100%] [32m[1mLinking CXX executable position_data[0m
+[8.888s] [100%] Built target position_data

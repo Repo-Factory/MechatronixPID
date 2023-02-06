@@ -77,9 +77,9 @@ static bool _Position__cdr_deserialize(
     cdr >> cdrSize;
     size_t size = static_cast<size_t>(cdrSize);
     if (ros_message->position_vector.data) {
-      rosidl_runtime_c__int32__Sequence__fini(&ros_message->position_vector);
+      rosidl_runtime_c__double__Sequence__fini(&ros_message->position_vector);
     }
-    if (!rosidl_runtime_c__int32__Sequence__init(&ros_message->position_vector, size)) {
+    if (!rosidl_runtime_c__double__Sequence__init(&ros_message->position_vector, size)) {
       return "failed to create array for field 'position_vector'";
     }
     auto array_ptr = ros_message->position_vector.data;
@@ -145,8 +145,8 @@ size_t max_serialized_size_robot_types__msg__Position(
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
 
-    current_alignment += array_size * sizeof(uint32_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
   return current_alignment - initial_alignment;

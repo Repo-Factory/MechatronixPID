@@ -7,9 +7,6 @@ using namespace std;
 class PID_Params
 {
     private:
-
-    public:
-
         map<string, map<string, double>> pid_params;
         map<string, double> roll;
         map<string, double> pitch;
@@ -21,8 +18,9 @@ class PID_Params
         map<string, double> y_vel;
         map<string, double> z_vel;
 
-    PID_Params();
+    public:
+        PID_Params();
 
-    map<string, map<string, double>> get_pid_params();
+        map<string, map<string, double>> get_pid_params();
 
 };

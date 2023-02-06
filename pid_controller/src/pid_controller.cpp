@@ -27,12 +27,12 @@ PID_Controller::PID_Controller
         double k_p, 
         double k_i, 
         double k_d, 
+        bool angle_wrap,
         double i_min, 
         double i_max, 
         double ctrl_val_min, 
         double ctrl_val_max, 
-        double ctrl_val_offset, 
-        bool angle_wrap
+        double ctrl_val_offset
     )
 
     {
@@ -49,38 +49,38 @@ PID_Controller::PID_Controller
         this->previous_error = 0.0;                 // Helps in derivative calculation
     }
 
-    void PID_Controller::set_gains(double k_p, double k_i, double k_d)
-    {
-        /**
-        Reset the gain parameters. These are constants that have to be tuned to fit the system.
-        Parameters:
-                        
-            *  kp - kd - ki Explanation:
+void PID_Controller::set_gains(double k_p, double k_i, double k_d)
+{
+    /**
+    Reset the gain parameters. These are constants that have to be tuned to fit the system.
+    Parameters:
+                    
+        *  kp - kd - ki Explanation:
 
-            *  kp (proportional gain) determines the proportion of the control signal that is proportional to the error
-            *  between the set point and the process variable. The larger the value of kp, the stronger the controller 
-            *  will respond to the error.
-            * 
-            *  ki (integral gain) determines the proportion of the control signal that is proportional to the integral
-            *  of the error over time. This term helps to eliminate any residual error that may be present after 
-            *  the proportional term has done its job 
-            * 
-            *  kd (derivative gain) determines the proportion of the control signal that is proportional to the rate 
-            *  of change of the error. This term helps to reduce overshoot and oscillations in the control signal, 
-            *  by predicting the future error based on the current rate of change.
-        */
+        *  kp (proportional gain) determines the proportion of the control signal that is proportional to the error
+        *  between the set point and the process variable. The larger the value of kp, the stronger the controller 
+        *  will respond to the error.
+        * 
+        *  ki (integral gain) determines the proportion of the control signal that is proportional to the integral
+        *  of the error over time. This term helps to eliminate any residual error that may be present after 
+        *  the proportional term has done its job 
+        * 
+        *  kd (derivative gain) determines the proportion of the control signal that is proportional to the rate 
+        *  of change of the error. This term helps to reduce overshoot and oscillations in the control signal, 
+        *  by predicting the future error based on the current rate of change.
+    */
 
-        this->k_p = k_p;
-        this->k_i = k_i;
-        this->k_d = k_d;
-    }
+    this->k_p = k_p;
+    this->k_i = k_i;
+    this->k_d = k_d;
+}
 
 
-    pair<double, double> PID_Controller::update(double set_point, double process_point, double dt)
-    {
+pair<double, double> PID_Controller::update(double set_point, double process_point, double dt)
+{
     /**
     Perfrom a control step to correct for error in control system.
-    
+
     Parameters:
         set_point: The current state of the system
         process_point: The desired state of the system
@@ -88,7 +88,7 @@ PID_Controller::PID_Controller
     Returns:
         ctrl_val: A PID output control value to correct for error in system
     */
-    
+
 
     // compute error which is important in determining our proportional, integral, derivative
 
@@ -160,6 +160,7 @@ PID_Controller::PID_Controller
     return ctrl_and_error;
 }
 
+// Print all PIDs fields
 void PID_Controller::getStatus()
 {
     cout << "k_p: " << this->k_p << endl;

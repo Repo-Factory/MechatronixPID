@@ -2,14 +2,16 @@
 #include <string>
 #include <utility>
 #include <tuple>
+#include <memory>
 
 #include "pid_controller.hpp"
 #include "pid_params.hpp"
-#include "../../helpers/vector_operations.hpp"
+#include "/home/conner/mechatronics/pid/helpers/vector_operations.hpp" // matrix multiplication
 
 using namespace std;
 
-/** Create a "positional" pid control system for the Scion. This system constains a positional pid layer
+/** 
+  * Create a "positional" pid control system for the Scion. This system constains a positional pid layer
   * that directly feeds into a velocity PID layer. There will be 6 directional controller for
   * (roll, pitch, yaw, x, y, z). These are the DOFs controllable by the actuator.
 */
@@ -17,20 +19,20 @@ using namespace std;
 class Scion_Position_PID_Controller
 {
     public:
-        PID_Controller roll_pid;
-        PID_Controller pitch_pid;
-        PID_Controller yaw_pid;
-        PID_Controller x_pos_pid;
-        PID_Controller y_pos_pid;
-        PID_Controller z_pos_pid;
-        PID_Controller x_vel_pid;
-        PID_Controller y_vel_pid;
-        PID_Controller z_vel_pid;
-        std::map<string, PID_Controller*> controllers;
+        shared_ptr<PID_Controller> roll_pid;
+        shared_ptr<PID_Controller> pitch_pid;
+        shared_ptr<PID_Controller> yaw_pid;
+        shared_ptr<PID_Controller> x_pos_pid;
+        shared_ptr<PID_Controller> y_pos_pid;
+        shared_ptr<PID_Controller> z_pos_pid;
+        std::map<string, shared_ptr<PID_Controller>> controllers;
+        vector<double> last_generated_ctrl_vals;
         vector<vector<double>> pid_thrust_mapper;
 
+        // default constructor to tune PID manually, or pid_params uses pre-loaded file to tune PID
         Scion_Position_PID_Controller();
-        Scion_Position_PID_Controller(map<string, map<string, double>>& pid_params);
+
+        Scion_Position_PID_Controller(map<string, map<string, double>> pid_params);
     
         //Initialize pid controllers
         pair<vector<double>, vector<double>> update
@@ -43,9 +45,4 @@ class Scion_Position_PID_Controller
         void getStatus();
 
     private:
-        
-
-// Create a "velocity" pid control system for the Scion. There will be 6 controllers for
-// (roll, pitch, yaw, x, y, z). These are the DOFs controllable by the actuator.
-
 };

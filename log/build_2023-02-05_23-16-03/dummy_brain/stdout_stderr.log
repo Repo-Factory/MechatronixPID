@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target dummy_brain[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/dummy_brain.dir/src/dummy_brain.cpp.o[0m
+[100%] [32m[1mLinking CXX executable dummy_brain[0m
+[100%] Built target dummy_brain
+-- Install configuration: ""
+-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/lib/dummy_brain/dummy_brain
+-- Set runtime path of "/home/conner/mechatronics/pid/install/dummy_brain/lib/dummy_brain/dummy_brain" to ""
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/ament_index/resource_index/package_run_dependencies/dummy_brain
+-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/ament_index/resource_index/parent_prefix_path/dummy_brain
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/environment/ament_prefix_path.sh
+-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/environment/path.sh
+-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/environment/path.dsv
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/local_setup.bash
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/local_setup.sh
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/local_setup.zsh
+-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/local_setup.dsv
+-- Installing: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/package.dsv
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/ament_index/resource_index/packages/dummy_brain
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/cmake/dummy_brainConfig.cmake
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/cmake/dummy_brainConfig-version.cmake
+-- Up-to-date: /home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/package.xml

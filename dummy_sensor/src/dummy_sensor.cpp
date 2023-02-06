@@ -27,7 +27,7 @@ public:
          * and a timer that calls callback every 5 seconds 
         **/
         publisher_ = this->create_publisher<robot_types::msg::Position>("position_data", 10);
-        timer_ = this->create_wall_timer(1500ms, std::bind(&DummySensor::timer_callback, this));
+        timer_ = this->create_wall_timer(3000ms, std::bind(&DummySensor::timer_callback, this));
     }
 
 private:
@@ -37,25 +37,25 @@ private:
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<robot_types::msg::Position>::SharedPtr publisher_;
 
-    vector<int> generateRandomCoordinates()
+    vector<double> generateRandomCoordinates()
     /** 
      * Helper function to return seconds passed since epoch - 0
      **/
     {   
         srand(time(0));
-        int random_roll = rand() % 10;
-        int random_pitch = rand() % 10;
-        int random_yaw = rand() % 10;
-        int randomX = rand() % 10;
-        int randomY = rand() % 10;
-        int randomZ = rand() % 10;
-        vector<int> randomPosition{random_roll, random_pitch, random_yaw, randomX, randomY, randomZ};
+        double random_roll = (double)rand()/RAND_MAX*10;
+        double random_pitch = (double)rand()/RAND_MAX*10;
+        double random_yaw = (double)rand()/RAND_MAX*10;
+        double randomX = (double)rand()/RAND_MAX*10;
+        double randomY = (double)rand()/RAND_MAX*10;
+        double randomZ = (double)rand()/RAND_MAX*10;
+        vector<double> randomPosition{random_roll, random_pitch, random_yaw, randomX, randomY, randomZ};
         return randomPosition;
     }
 
-    void printVector(vector<int> intVector)
+    void printVector(vector<double> vector)
     {
-        for (int number : intVector)
+        for (double number : vector)
         {
             std::cout << number << " " << endl;
         }

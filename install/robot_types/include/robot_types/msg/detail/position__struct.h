@@ -24,7 +24,7 @@ extern "C"
 // Struct defined in msg/Position in the package robot_types.
 typedef struct robot_types__msg__Position
 {
-  rosidl_runtime_c__int32__Sequence position_vector;
+  rosidl_runtime_c__double__Sequence position_vector;
 } robot_types__msg__Position;
 
 // Struct for a sequence of robot_types__msg__Position.

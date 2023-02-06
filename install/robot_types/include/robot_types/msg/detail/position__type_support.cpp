@@ -39,35 +39,35 @@ void Position_fini_function(void * message_memory)
 
 size_t size_function__Position__position_vector(const void * untyped_member)
 {
-  const auto * member = reinterpret_cast<const std::vector<int32_t> *>(untyped_member);
+  const auto * member = reinterpret_cast<const std::vector<double> *>(untyped_member);
   return member->size();
 }
 
 const void * get_const_function__Position__position_vector(const void * untyped_member, size_t index)
 {
   const auto & member =
-    *reinterpret_cast<const std::vector<int32_t> *>(untyped_member);
+    *reinterpret_cast<const std::vector<double> *>(untyped_member);
   return &member[index];
 }
 
 void * get_function__Position__position_vector(void * untyped_member, size_t index)
 {
   auto & member =
-    *reinterpret_cast<std::vector<int32_t> *>(untyped_member);
+    *reinterpret_cast<std::vector<double> *>(untyped_member);
   return &member[index];
 }
 
 void resize_function__Position__position_vector(void * untyped_member, size_t size)
 {
   auto * member =
-    reinterpret_cast<std::vector<int32_t> *>(untyped_member);
+    reinterpret_cast<std::vector<double> *>(untyped_member);
   member->resize(size);
 }
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember Position_message_member_array[1] = {
   {
     "position_vector",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     true,  // is array

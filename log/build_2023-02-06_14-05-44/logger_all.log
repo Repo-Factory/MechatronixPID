@@ -1,0 +1,407 @@
+[0.488s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.488s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7faa3fca1910>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7faa3fca1910>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7faa3fca1e80>)
+[0.523s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.524s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.524s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.524s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.524s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.524s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.524s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/conner/mechatronics/pid'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore_ament_install'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_pkg']
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_pkg'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_meta']
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_meta'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ros']
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ros'
+[0.556s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['cmake', 'python']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'cmake'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['python_setup_py']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python_setup_py'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extensions ['ignore', 'ignore_ament_install']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extension 'ignore'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extension 'ignore_ament_install'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extensions ['colcon_pkg']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extension 'colcon_pkg'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extensions ['colcon_meta']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extension 'colcon_meta'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extensions ['ros']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extension 'ros'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extensions ['cmake', 'python']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extension 'cmake'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extension 'python'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extensions ['python_setup_py']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extension 'python_setup_py'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(controller) by extensions ['ignore', 'ignore_ament_install']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(controller) by extension 'ignore'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(controller) by extension 'ignore_ament_install'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(controller) by extensions ['colcon_pkg']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(controller) by extension 'colcon_pkg'
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(controller) by extensions ['colcon_meta']
+[0.560s] Level 1:colcon.colcon_core.package_identification:_identify(controller) by extension 'colcon_meta'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(controller) by extensions ['ros']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(controller) by extension 'ros'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(controller) by extensions ['cmake', 'python']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(controller) by extension 'cmake'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(controller) by extension 'python'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(controller) by extensions ['python_setup_py']
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(controller) by extension 'python_setup_py'
+[0.561s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_brain) by extensions ['ignore', 'ignore_ament_install']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_brain) by extension 'ignore'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_brain) by extension 'ignore_ament_install'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_brain) by extensions ['colcon_pkg']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_brain) by extension 'colcon_pkg'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_brain) by extensions ['colcon_meta']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_brain) by extension 'colcon_meta'
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_brain) by extensions ['ros']
+[0.562s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_brain) by extension 'ros'
+[0.566s] DEBUG:colcon.colcon_core.package_identification:Package 'dummy_brain' with type 'ros.ament_cmake' and name 'dummy_brain'
+[0.566s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_sensor) by extensions ['ignore', 'ignore_ament_install']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_sensor) by extension 'ignore'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_sensor) by extension 'ignore_ament_install'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_sensor) by extensions ['colcon_pkg']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_sensor) by extension 'colcon_pkg'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_sensor) by extensions ['colcon_meta']
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_sensor) by extension 'colcon_meta'
+[0.567s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_sensor) by extensions ['ros']
+[0.568s] Level 1:colcon.colcon_core.package_identification:_identify(dummy_sensor) by extension 'ros'
+[0.568s] DEBUG:colcon.colcon_core.package_identification:Package 'dummy_sensor' with type 'ros.ament_cmake' and name 'dummy_sensor'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(helpers) by extensions ['ignore', 'ignore_ament_install']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(helpers) by extension 'ignore'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(helpers) by extension 'ignore_ament_install'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(helpers) by extensions ['colcon_pkg']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(helpers) by extension 'colcon_pkg'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(helpers) by extensions ['colcon_meta']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(helpers) by extension 'colcon_meta'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(helpers) by extensions ['ros']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(helpers) by extension 'ros'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(helpers) by extensions ['cmake', 'python']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(helpers) by extension 'cmake'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(helpers) by extension 'python'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(helpers) by extensions ['python_setup_py']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(helpers) by extension 'python_setup_py'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(linker_studying) by extensions ['ignore', 'ignore_ament_install']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(linker_studying) by extension 'ignore'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(linker_studying) by extension 'ignore_ament_install'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(linker_studying) by extensions ['colcon_pkg']
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(linker_studying) by extension 'colcon_pkg'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(linker_studying) by extensions ['colcon_meta']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(linker_studying) by extension 'colcon_meta'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(linker_studying) by extensions ['ros']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(linker_studying) by extension 'ros'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(linker_studying) by extensions ['cmake', 'python']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(linker_studying) by extension 'cmake'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(linker_studying) by extension 'python'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(linker_studying) by extensions ['python_setup_py']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(linker_studying) by extension 'python_setup_py'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(pid_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(pid_controller) by extension 'ignore'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(pid_controller) by extension 'ignore_ament_install'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(pid_controller) by extensions ['colcon_pkg']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(pid_controller) by extension 'colcon_pkg'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(pid_controller) by extensions ['colcon_meta']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(pid_controller) by extension 'colcon_meta'
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(pid_controller) by extensions ['ros']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(pid_controller) by extension 'ros'
+[0.575s] DEBUG:colcon.colcon_core.package_identification:Package 'pid_controller' with type 'ros.ament_cmake' and name 'pid_controller'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(robot_types) by extensions ['ignore', 'ignore_ament_install']
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(robot_types) by extension 'ignore'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(robot_types) by extension 'ignore_ament_install'
+[0.575s] Level 1:colcon.colcon_core.package_identification:_identify(robot_types) by extensions ['colcon_pkg']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(robot_types) by extension 'colcon_pkg'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(robot_types) by extensions ['colcon_meta']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(robot_types) by extension 'colcon_meta'
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(robot_types) by extensions ['ros']
+[0.576s] Level 1:colcon.colcon_core.package_identification:_identify(robot_types) by extension 'ros'
+[0.576s] DEBUG:colcon.colcon_core.package_identification:Package 'robot_types' with type 'ros.ament_cmake' and name 'robot_types'
+[0.576s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.577s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.577s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.577s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.577s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.605s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/conner/mechatronics/pid/install
+[0.608s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 256 installed packages in /opt/ros/foxy
+[0.611s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'robot_types' build argument 'cmake_args' from command line to 'None'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'robot_types' build argument 'cmake_target' from command line to 'None'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'robot_types' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'robot_types' build argument 'cmake_clean_cache' from command line to 'False'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'robot_types' build argument 'cmake_clean_first' from command line to 'False'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'robot_types' build argument 'cmake_force_configure' from command line to 'False'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'robot_types' build argument 'ament_cmake_args' from command line to 'None'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'robot_types' build argument 'catkin_cmake_args' from command line to 'None'
+[0.717s] Level 5:colcon.colcon_core.verb:set package 'robot_types' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.717s] DEBUG:colcon.colcon_core.verb:Building package 'robot_types' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/conner/mechatronics/pid/build/robot_types', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/conner/mechatronics/pid/install/robot_types', 'merge_install': False, 'path': '/home/conner/mechatronics/pid/robot_types', 'symlink_install': False, 'test_result_base': None}
+[0.718s] Level 5:colcon.colcon_core.verb:set package 'dummy_brain' build argument 'cmake_args' from command line to 'None'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'dummy_brain' build argument 'cmake_target' from command line to 'None'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'dummy_brain' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'dummy_brain' build argument 'cmake_clean_cache' from command line to 'False'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'dummy_brain' build argument 'cmake_clean_first' from command line to 'False'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'dummy_brain' build argument 'cmake_force_configure' from command line to 'False'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'dummy_brain' build argument 'ament_cmake_args' from command line to 'None'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'dummy_brain' build argument 'catkin_cmake_args' from command line to 'None'
+[0.719s] Level 5:colcon.colcon_core.verb:set package 'dummy_brain' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.719s] DEBUG:colcon.colcon_core.verb:Building package 'dummy_brain' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/conner/mechatronics/pid/build/dummy_brain', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/conner/mechatronics/pid/install/dummy_brain', 'merge_install': False, 'path': '/home/conner/mechatronics/pid/dummy_brain', 'symlink_install': False, 'test_result_base': None}
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'dummy_sensor' build argument 'cmake_args' from command line to 'None'
+[0.720s] Level 5:colcon.colcon_core.verb:set package 'dummy_sensor' build argument 'cmake_target' from command line to 'None'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'dummy_sensor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'dummy_sensor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'dummy_sensor' build argument 'cmake_clean_first' from command line to 'False'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'dummy_sensor' build argument 'cmake_force_configure' from command line to 'False'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'dummy_sensor' build argument 'ament_cmake_args' from command line to 'None'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'dummy_sensor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.721s] Level 5:colcon.colcon_core.verb:set package 'dummy_sensor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.721s] DEBUG:colcon.colcon_core.verb:Building package 'dummy_sensor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/conner/mechatronics/pid/build/dummy_sensor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/conner/mechatronics/pid/install/dummy_sensor', 'merge_install': False, 'path': '/home/conner/mechatronics/pid/dummy_sensor', 'symlink_install': False, 'test_result_base': None}
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'pid_controller' build argument 'cmake_args' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'pid_controller' build argument 'cmake_target' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'pid_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'pid_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'pid_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'pid_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'pid_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'pid_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.722s] Level 5:colcon.colcon_core.verb:set package 'pid_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.722s] DEBUG:colcon.colcon_core.verb:Building package 'pid_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/conner/mechatronics/pid/build/pid_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/conner/mechatronics/pid/install/pid_controller', 'merge_install': False, 'path': '/home/conner/mechatronics/pid/pid_controller', 'symlink_install': False, 'test_result_base': None}
+[0.723s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.728s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.729s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/conner/mechatronics/pid/robot_types' with build type 'ament_cmake'
+[0.730s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/conner/mechatronics/pid/robot_types'
+[0.739s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.739s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.740s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.787s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/conner/mechatronics/pid/build/robot_types': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/conner/mechatronics/pid/build/robot_types -- -j8 -l8
+[1.135s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/conner/mechatronics/pid/build/robot_types' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/conner/mechatronics/pid/build/robot_types -- -j8 -l8
+[1.227s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/conner/mechatronics/pid/build/robot_types': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/conner/mechatronics/pid/build/robot_types
+[1.330s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_types)
+[1.335s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/conner/mechatronics/pid/build/robot_types' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/conner/mechatronics/pid/build/robot_types
+[1.344s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/robot_types' for CMake module files
+[1.346s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/robot_types' for CMake config files
+[1.347s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_types', 'cmake_prefix_path')
+[1.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/hook/cmake_prefix_path.ps1'
+[1.352s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/hook/cmake_prefix_path.dsv'
+[1.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/hook/cmake_prefix_path.sh'
+[1.356s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/robot_types/lib'
+[1.357s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_types', 'ld_library_path_lib')
+[1.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/hook/ld_library_path_lib.ps1'
+[1.361s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/hook/ld_library_path_lib.dsv'
+[1.362s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/hook/ld_library_path_lib.sh'
+[1.363s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/robot_types/bin'
+[1.363s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/robot_types/lib/pkgconfig/robot_types.pc'
+[1.364s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages'
+[1.364s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_types', 'pythonpath')
+[1.367s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/hook/pythonpath.ps1'
+[1.368s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/hook/pythonpath.dsv'
+[1.369s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/hook/pythonpath.sh'
+[1.370s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/robot_types/bin'
+[1.374s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/package.ps1'
+[1.376s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/package.dsv'
+[1.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/package.sh'
+[1.379s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/package.bash'
+[1.381s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/package.zsh'
+[1.385s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/conner/mechatronics/pid/install/robot_types/share/colcon-core/packages/robot_types)
+[1.508s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_types)
+[1.512s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/robot_types' for CMake module files
+[1.513s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/robot_types' for CMake config files
+[1.514s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_types', 'cmake_prefix_path')
+[1.516s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/hook/cmake_prefix_path.ps1'
+[1.517s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/hook/cmake_prefix_path.dsv'
+[1.518s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/hook/cmake_prefix_path.sh'
+[1.519s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/robot_types/lib'
+[1.519s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_types', 'ld_library_path_lib')
+[1.521s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/hook/ld_library_path_lib.ps1'
+[1.522s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/hook/ld_library_path_lib.dsv'
+[1.522s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/hook/ld_library_path_lib.sh'
+[1.523s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/robot_types/bin'
+[1.523s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/robot_types/lib/pkgconfig/robot_types.pc'
+[1.523s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages'
+[1.524s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_types', 'pythonpath')
+[1.527s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/hook/pythonpath.ps1'
+[1.528s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/hook/pythonpath.dsv'
+[1.528s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/hook/pythonpath.sh'
+[1.529s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/robot_types/bin'
+[1.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/package.ps1'
+[1.532s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/package.dsv'
+[1.532s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/package.sh'
+[1.533s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/package.bash'
+[1.534s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/robot_types/share/robot_types/package.zsh'
+[1.534s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/conner/mechatronics/pid/install/robot_types/share/colcon-core/packages/robot_types)
+[1.535s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/conner/mechatronics/pid/dummy_brain' with build type 'ament_cmake'
+[1.536s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/conner/mechatronics/pid/dummy_brain'
+[1.540s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.540s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.551s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/conner/mechatronics/pid/dummy_sensor' with build type 'ament_cmake'
+[1.552s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/conner/mechatronics/pid/dummy_sensor'
+[1.555s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.555s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.572s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/conner/mechatronics/pid/pid_controller' with build type 'ament_cmake'
+[1.574s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/conner/mechatronics/pid/pid_controller'
+[1.578s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.579s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.965s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/conner/mechatronics/pid/build/dummy_brain': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/conner/mechatronics/pid/build/dummy_brain -- -j8 -l8
+[1.982s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/conner/mechatronics/pid/build/dummy_sensor': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/conner/mechatronics/pid/build/dummy_sensor -- -j8 -l8
+[1.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/conner/mechatronics/pid/build/pid_controller': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/conner/mechatronics/pid/build/pid_controller -- -j8 -l8
+[2.085s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/conner/mechatronics/pid/build/dummy_brain' returned '0': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/conner/mechatronics/pid/build/dummy_brain -- -j8 -l8
+[2.111s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/conner/mechatronics/pid/build/dummy_sensor' returned '0': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/conner/mechatronics/pid/build/dummy_sensor -- -j8 -l8
+[2.142s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/conner/mechatronics/pid/build/dummy_brain': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/conner/mechatronics/pid/build/dummy_brain
+[2.180s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dummy_brain)
+[2.186s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_brain' for CMake module files
+[2.195s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/conner/mechatronics/pid/build/dummy_sensor': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/conner/mechatronics/pid/build/dummy_sensor
+[2.196s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/conner/mechatronics/pid/build/dummy_brain' returned '0': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/conner/mechatronics/pid/build/dummy_brain
+[2.208s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_brain' for CMake config files
+[2.213s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_brain', 'cmake_prefix_path')
+[2.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/hook/cmake_prefix_path.ps1'
+[2.217s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/hook/cmake_prefix_path.dsv'
+[2.218s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/hook/cmake_prefix_path.sh'
+[2.219s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_brain/lib'
+[2.220s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_brain/bin'
+[2.220s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_brain/lib/pkgconfig/dummy_brain.pc'
+[2.220s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_brain/lib/python3.8/site-packages'
+[2.221s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_brain/bin'
+[2.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/package.ps1'
+[2.225s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/package.dsv'
+[2.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/package.sh'
+[2.228s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/package.bash'
+[2.229s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/package.zsh'
+[2.230s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/conner/mechatronics/pid/install/dummy_brain/share/colcon-core/packages/dummy_brain)
+[2.238s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dummy_sensor)
+[2.244s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_sensor' for CMake module files
+[2.246s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/conner/mechatronics/pid/build/dummy_sensor' returned '0': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/conner/mechatronics/pid/build/dummy_sensor
+[2.248s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_sensor' for CMake config files
+[2.248s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_sensor', 'cmake_prefix_path')
+[2.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/hook/cmake_prefix_path.ps1'
+[2.255s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/hook/cmake_prefix_path.dsv'
+[2.256s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/hook/cmake_prefix_path.sh'
+[2.258s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_sensor/lib'
+[2.258s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_sensor/bin'
+[2.259s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_sensor/lib/pkgconfig/dummy_sensor.pc'
+[2.259s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_sensor/lib/python3.8/site-packages'
+[2.260s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_sensor/bin'
+[2.263s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/package.ps1'
+[2.265s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/package.dsv'
+[2.266s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/package.sh'
+[2.268s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/package.bash'
+[2.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/package.zsh'
+[2.270s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/conner/mechatronics/pid/install/dummy_sensor/share/colcon-core/packages/dummy_sensor)
+[2.286s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dummy_brain)
+[2.289s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_brain' for CMake module files
+[2.290s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_brain' for CMake config files
+[2.291s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_brain', 'cmake_prefix_path')
+[2.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/hook/cmake_prefix_path.ps1'
+[2.295s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/hook/cmake_prefix_path.dsv'
+[2.296s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/hook/cmake_prefix_path.sh'
+[2.298s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_brain/lib'
+[2.298s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_brain/bin'
+[2.299s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_brain/lib/pkgconfig/dummy_brain.pc'
+[2.299s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_brain/lib/python3.8/site-packages'
+[2.300s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_brain/bin'
+[2.302s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/package.ps1'
+[2.303s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/package.dsv'
+[2.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/package.sh'
+[2.306s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/package.bash'
+[2.307s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/dummy_brain/share/dummy_brain/package.zsh'
+[2.309s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/conner/mechatronics/pid/install/dummy_brain/share/colcon-core/packages/dummy_brain)
+[2.327s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dummy_sensor)
+[2.330s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_sensor' for CMake module files
+[2.331s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_sensor' for CMake config files
+[2.332s] Level 1:colcon.colcon_core.shell:create_environment_hook('dummy_sensor', 'cmake_prefix_path')
+[2.334s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/hook/cmake_prefix_path.ps1'
+[2.335s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/hook/cmake_prefix_path.dsv'
+[2.336s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/hook/cmake_prefix_path.sh'
+[2.337s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_sensor/lib'
+[2.337s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_sensor/bin'
+[2.338s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_sensor/lib/pkgconfig/dummy_sensor.pc'
+[2.339s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_sensor/lib/python3.8/site-packages'
+[2.339s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/dummy_sensor/bin'
+[2.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/package.ps1'
+[2.350s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/package.dsv'
+[2.352s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/package.sh'
+[2.354s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/package.bash'
+[2.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/dummy_sensor/share/dummy_sensor/package.zsh'
+[2.359s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/conner/mechatronics/pid/install/dummy_sensor/share/colcon-core/packages/dummy_sensor)
+[4.032s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/conner/mechatronics/pid/build/pid_controller' returned '0': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --build /home/conner/mechatronics/pid/build/pid_controller -- -j8 -l8
+[4.079s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/conner/mechatronics/pid/build/pid_controller': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/conner/mechatronics/pid/build/pid_controller
+[4.100s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pid_controller)
+[4.101s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/conner/mechatronics/pid/build/pid_controller' returned '0': CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types:/home/conner/mechatronics/pid/install/pid_controller:/home/conner/mechatronics/pid/install/dummy_sensor:/home/conner/mechatronics/pid/install/dummy_brain:/opt/ros/foxy LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/cmake --install /home/conner/mechatronics/pid/build/pid_controller
+[4.105s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/pid_controller' for CMake module files
+[4.106s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/pid_controller' for CMake config files
+[4.106s] Level 1:colcon.colcon_core.shell:create_environment_hook('pid_controller', 'cmake_prefix_path')
+[4.108s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/hook/cmake_prefix_path.ps1'
+[4.110s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/hook/cmake_prefix_path.dsv'
+[4.111s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/hook/cmake_prefix_path.sh'
+[4.113s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/pid_controller/lib'
+[4.113s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/pid_controller/bin'
+[4.113s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/pid_controller/lib/pkgconfig/pid_controller.pc'
+[4.114s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/pid_controller/lib/python3.8/site-packages'
+[4.114s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/pid_controller/bin'
+[4.116s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/package.ps1'
+[4.117s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/package.dsv'
+[4.118s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/package.sh'
+[4.119s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/package.bash'
+[4.120s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/package.zsh'
+[4.121s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/conner/mechatronics/pid/install/pid_controller/share/colcon-core/packages/pid_controller)
+[4.168s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pid_controller)
+[4.171s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/pid_controller' for CMake module files
+[4.171s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/pid_controller' for CMake config files
+[4.172s] Level 1:colcon.colcon_core.shell:create_environment_hook('pid_controller', 'cmake_prefix_path')
+[4.173s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/hook/cmake_prefix_path.ps1'
+[4.174s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/hook/cmake_prefix_path.dsv'
+[4.175s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/hook/cmake_prefix_path.sh'
+[4.177s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/pid_controller/lib'
+[4.177s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/pid_controller/bin'
+[4.177s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/pid_controller/lib/pkgconfig/pid_controller.pc'
+[4.178s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/pid_controller/lib/python3.8/site-packages'
+[4.179s] Level 1:colcon.colcon_core.environment:checking '/home/conner/mechatronics/pid/install/pid_controller/bin'
+[4.180s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/package.ps1'
+[4.182s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/package.dsv'
+[4.183s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/package.sh'
+[4.184s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/package.bash'
+[4.185s] INFO:colcon.colcon_core.shell:Creating package script '/home/conner/mechatronics/pid/install/pid_controller/share/pid_controller/package.zsh'
+[4.186s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/conner/mechatronics/pid/install/pid_controller/share/colcon-core/packages/pid_controller)
+[4.187s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.188s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.189s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.191s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.300s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[4.300s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.301s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.301s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.314s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[4.315s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.319s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/conner/mechatronics/pid/install/local_setup.ps1'
+[4.322s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/conner/mechatronics/pid/install/_local_setup_util_ps1.py'
+[4.327s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/conner/mechatronics/pid/install/setup.ps1'
+[4.331s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/conner/mechatronics/pid/install/local_setup.sh'
+[4.333s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/conner/mechatronics/pid/install/_local_setup_util_sh.py'
+[4.335s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/conner/mechatronics/pid/install/setup.sh'
+[4.338s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/conner/mechatronics/pid/install/local_setup.bash'
+[4.339s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/conner/mechatronics/pid/install/setup.bash'
+[4.342s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/conner/mechatronics/pid/install/local_setup.zsh'
+[4.344s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/conner/mechatronics/pid/install/setup.zsh'

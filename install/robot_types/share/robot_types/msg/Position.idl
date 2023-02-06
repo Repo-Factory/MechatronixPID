@@ -6,7 +6,7 @@
 module robot_types {
   module msg {
     struct Position {
-      sequence<int32> position_vector;
+      sequence<double> position_vector;
     };
   };
 };
