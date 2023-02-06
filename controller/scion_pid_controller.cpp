@@ -55,12 +55,12 @@ Scion_Position_PID_Controller::Scion_Position_PID_Controller()
                                     };
 }
 
-Scion_Position_PID_Controller::Scion_Position_PID_Controller(map<string, map<string, double>>& pid_params)
+Scion_Position_PID_Controller::Scion_Position_PID_Controller(map<string, map<string, double>> pid_params)
 {
     Scion_Position_PID_Controller();
 
     // load pid parameter values from dictionary
-    for (auto& ctrl_type : this->controllers)
+    for (auto& ctrl_type : this->controllers) // one row with string : &PID_Controller
     {
         this->controllers[ctrl_type.first]->k_p = pid_params[ctrl_type.first]["kp"];
         this->controllers[ctrl_type.first]->k_i = pid_params[ctrl_type.first]["ki"];

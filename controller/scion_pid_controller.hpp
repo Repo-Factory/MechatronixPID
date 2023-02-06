@@ -30,7 +30,7 @@ class Scion_Position_PID_Controller
         vector<vector<double>> pid_thrust_mapper;
 
         Scion_Position_PID_Controller();
-        Scion_Position_PID_Controller(map<string, map<string, double>>& pid_params);
+        Scion_Position_PID_Controller(map<string, map<string, double>> pid_params);
     
         //Initialize pid controllers
         pair<vector<double>, vector<double>> update
