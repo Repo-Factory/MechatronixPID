@@ -30,12 +30,12 @@ class PID_Controller
             double k_p, 
             double k_i, 
             double k_d, 
+            bool angle_wrap=false,
             double i_min=-1.0, 
             double i_max=1.0, 
             double ctrl_val_min=-1.0, 
             double ctrl_val_max=1.0, 
-            double ctrl_val_offset=0.0, 
-            bool angle_wrap=false
+            double ctrl_val_offset=0.0
         );
    
         void set_gains(double k_p, double k_i, double k_d);

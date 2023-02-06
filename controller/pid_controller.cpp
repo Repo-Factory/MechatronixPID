@@ -27,12 +27,12 @@ PID_Controller::PID_Controller
         double k_p, 
         double k_i, 
         double k_d, 
+        bool angle_wrap,
         double i_min, 
         double i_max, 
         double ctrl_val_min, 
         double ctrl_val_max, 
-        double ctrl_val_offset, 
-        bool angle_wrap
+        double ctrl_val_offset
     )
 
     {

@@ -7,31 +7,27 @@
 
 Scion_Position_PID_Controller::Scion_Position_PID_Controller()
 {
-    this->roll_pid = PID_Controller(0.0, 0.0, 0.0);
-    this->roll_pid.angle_wrap=true;
-    this->pitch_pid = PID_Controller(0.0, 0.0, 0.0);
-    this->pitch_pid.angle_wrap=true;
-    this->yaw_pid = PID_Controller(0.0, 0.0, 0.0);
-    this->yaw_pid.angle_wrap=true;
+    this->roll_pid = std::make_shared<PID_Controller>(0.0, 0.0, 0.0, true);
+    this->pitch_pid = std::make_shared<PID_Controller>(0.0, 0.0, 0.0, true);
+    this->yaw_pid = std::make_shared<PID_Controller>(0.0, 0.0, 0.0, true);
 
-    this->x_pos_pid = PID_Controller(0.0, 0.0, 0.0);
-    this->y_pos_pid = PID_Controller(0.0, 0.0, 0.0);
-    this->z_pos_pid = PID_Controller(0.0, 0.0, 0.0);
+    this->x_pos_pid = std::make_shared<PID_Controller>(0.0, 0.0, 0.0);
+    this->y_pos_pid = std::make_shared<PID_Controller>(0.0, 0.0, 0.0);
+    this->z_pos_pid = std::make_shared<PID_Controller>(0.0, 0.0, 0.0);
 
-    std::map<string, PID_Controller*> controllerMap = 
-    {
-        {"roll",  &this->roll_pid}, 
-        {"pitch", &this->pitch_pid},
-        {"yaw",   &this->yaw_pid},
-        {"x_pos", &this->x_pos_pid},
-        {"y_pos", &this->y_pos_pid},
-        {"z_pos", &this->z_pos_pid},
-    };
+    this->controllers = std::map<string, shared_ptr<PID_Controller>>
+    (
+        {
+            {"roll",  this->roll_pid}, 
+            {"pitch", this->pitch_pid},
+            {"yaw",   this->yaw_pid},
+            {"x_pos", this->x_pos_pid},
+            {"y_pos", this->y_pos_pid},
+            {"z_pos", this->z_pos_pid},
+        }
+    ) ;
 
-    this->controllers = controllerMap;
-   
-
-     // matrix mapping the 6 pid controller outputs to the 8 thrusters
+    // matrix mapping the 6 pid controller outputs to the 8 thrusters
     // -----roll---pitch---yaw---x---y---z
     //| T0
     //| T1
@@ -57,32 +53,63 @@ Scion_Position_PID_Controller::Scion_Position_PID_Controller()
 
 Scion_Position_PID_Controller::Scion_Position_PID_Controller(map<string, map<string, double>> pid_params)
 {
-    Scion_Position_PID_Controller();
+    this->roll_pid = std::make_shared<PID_Controller>(0.0, 0.0, 0.0, true);
+    this->pitch_pid = std::make_shared<PID_Controller>(0.0, 0.0, 0.0, true);
+    this->yaw_pid = std::make_shared<PID_Controller>(0.0, 0.0, 0.0, true);
+
+    this->x_pos_pid = std::make_shared<PID_Controller>(0.0, 0.0, 0.0);
+    this->y_pos_pid = std::make_shared<PID_Controller>(0.0, 0.0, 0.0);
+    this->z_pos_pid = std::make_shared<PID_Controller>(0.0, 0.0, 0.0);
+
+    this->controllers = std::map<string, shared_ptr<PID_Controller>>
+    (
+        {
+            {"roll",  this->roll_pid}, 
+            {"pitch", this->pitch_pid},
+            {"yaw",   this->yaw_pid},
+            {"x_pos", this->x_pos_pid},
+            {"y_pos", this->y_pos_pid},
+            {"z_pos", this->z_pos_pid},
+        }
+    ) ;
+
+    // matrix mapping the 6 pid controller outputs to the 8 thrusters
+    // -----roll---pitch---yaw---x---y---z
+    //| T0
+    //| T1
+    //| T2
+    //| T3
+    //| T4
+    //| T5
+    //| T6
+    //| T7
+    
+    this->pid_thrust_mapper = vector<vector<double>>
+                                    {
+                                        {-1,  1,  0,  0,  0,  1},
+                                        { 0,  0,  1,  1,  1,  0},
+                                        {-1, -1,  0,  0,  0,  1},
+                                        { 0,  0,  1,  1, -1,  0},
+                                        { 1, -1,  0,  0,  0,  1},
+                                        { 0,  0, -1,  1,  1,  0},
+                                        { 1,  1,  0,  0,  0,  1},
+                                        { 0,  0, -1,  1, -1,  0}
+                                    };
 
     // load pid parameter values from dictionary
-    for (auto& ctrl_type : this->controllers) // one row with string : &PID_Controller
+    for (auto ctrl_type : this->controllers) // one row with string : unique_ptr<PID_Controller>
     {
-        this->controllers[ctrl_type.first]->k_p = pid_params[ctrl_type.first]["kp"];
-        this->controllers[ctrl_type.first]->k_i = pid_params[ctrl_type.first]["ki"];
-        this->controllers[ctrl_type.first]->k_d = pid_params[ctrl_type.first]["kd"];
-        this->controllers[ctrl_type.first]->ctrl_val_offset = pid_params[ctrl_type.first]["ctrl_val_offset"];
-        this->controllers[ctrl_type.first]->ctrl_val_max = pid_params[ctrl_type.first]["ctrl_val_max"];
-        this->controllers[ctrl_type.first]->ctrl_val_min = pid_params[ctrl_type.first]["ctrl_val_min"];
-        this->controllers[ctrl_type.first]->i_max = pid_params[ctrl_type.first]["i_max"];
-        this->controllers[ctrl_type.first]->i_min = pid_params[ctrl_type.first]["i_min"];
+        ctrl_type.second->k_p = pid_params[ctrl_type.first]["kp"];
+        ctrl_type.second->k_i = pid_params[ctrl_type.first]["ki"];
+        ctrl_type.second->k_d = pid_params[ctrl_type.first]["kd"];
+        ctrl_type.second->ctrl_val_offset = pid_params[ctrl_type.first]["ctrl_val_offset"];
+        ctrl_type.second->ctrl_val_max = pid_params[ctrl_type.first]["ctrl_val_max"];
+        ctrl_type.second->ctrl_val_min = pid_params[ctrl_type.first]["ctrl_val_min"];
+        ctrl_type.second->i_max = pid_params[ctrl_type.first]["i_max"];
+        ctrl_type.second->i_min = pid_params[ctrl_type.first]["i_min"];
     }
 }
 
-void Scion_Position_PID_Controller::getStatus()
-{
-    for (auto& ctrl_type : this->controllers)
-    {
-        cout << endl;
-        cout << "Printing Data For " << ctrl_type.first << "Controller:" << endl;
-        ctrl_type.second->getStatus();
-    }
-
-}
     //Initialize pid controllers
 pair<vector<double>, vector<double>> Scion_Position_PID_Controller::update
     (
@@ -101,27 +128,27 @@ pair<vector<double>, vector<double>> Scion_Position_PID_Controller::update
         :return thrusts - A list of length 6 of the thrusts to apply to each motor: Range [-100, 100] 
         */
             
-        pair<double, double> roll_ctrl_data = this->roll_pid.update(set_pos_point[0], process_pos_point[0], dt);
+        pair<double, double> roll_ctrl_data = this->roll_pid->update(set_pos_point[0], process_pos_point[0], dt);
         double roll_ctrl_val = roll_ctrl_data.first;
         double roll_error = roll_ctrl_data.second;
 
-        pair<double, double> pitch_ctrl_data = this->pitch_pid.update(set_pos_point[1], process_pos_point[1], dt);
+        pair<double, double> pitch_ctrl_data = this->pitch_pid->update(set_pos_point[1], process_pos_point[1], dt);
         double pitch_ctrl_val = pitch_ctrl_data.first;
         double pitch_error = pitch_ctrl_data.second;
 
-        pair<double, double> yaw_ctrl_data = this->yaw_pid.update(set_pos_point[2], process_pos_point[2], dt);
+        pair<double, double> yaw_ctrl_data = this->yaw_pid->update(set_pos_point[2], process_pos_point[2], dt);
         double yaw_ctrl_val = yaw_ctrl_data.first;
         double yaw_error = yaw_ctrl_data.second;
 
-        pair<double, double> x_pos_ctrl_data = this->x_pos_pid.update(set_pos_point[3], process_pos_point[3], dt);
+        pair<double, double> x_pos_ctrl_data = this->x_pos_pid->update(set_pos_point[3], process_pos_point[3], dt);
         double x_pos_ctrl_val = x_pos_ctrl_data.first;
         double x_pos_error = x_pos_ctrl_data.second;
 
-        pair<double, double> y_pos_ctrl_data = this->y_pos_pid.update(set_pos_point[4], process_pos_point[4], dt);
+        pair<double, double> y_pos_ctrl_data = this->y_pos_pid->update(set_pos_point[4], process_pos_point[4], dt);
         double y_pos_ctrl_val = y_pos_ctrl_data.first;
         double y_pos_error = y_pos_ctrl_data.second;
 
-        pair<double, double> z_pos_ctrl_data = this->z_pos_pid.update(set_pos_point[5], process_pos_point[5], dt);
+        pair<double, double> z_pos_ctrl_data = this->z_pos_pid->update(set_pos_point[5], process_pos_point[5], dt);
         double z_pos_ctrl_val = z_pos_ctrl_data.first;
         double z_pos_error = z_pos_ctrl_data.second;
 
@@ -145,6 +172,16 @@ pair<vector<double>, vector<double>> Scion_Position_PID_Controller::update
     }
 
 
+void Scion_Position_PID_Controller::getStatus()
+{
+    for (auto ctrl_type : this->controllers)
+    {
+        cout << endl;
+        cout << "Printing Data For " << ctrl_type.first << "Controller:" << endl;
+        ctrl_type.second->getStatus();
+    }
+}
+
 // Create a "velocity" pid control system for the Scion. There will be 6 controllers for
 // (roll, pitch, yaw, x, y, z). These are the DOFs controllable by the actuator.
 
@@ -156,17 +193,17 @@ int main()
 
     Scion_Position_PID_Controller controller = Scion_Position_PID_Controller();
 
-    controller.getStatus();
+    // controller.getStatus();
     /**
      * Tune PID
     */
 
-    controller.x_pos_pid.set_gains(.2,.13,.07);
-    controller.y_pos_pid.set_gains(.3,.11,.04); 
-    controller.z_pos_pid.set_gains(.15,.08,.02);  
-    controller.roll_pid.set_gains(.2,.13,.07); 
-    controller.pitch_pid.set_gains(.3,.11,.04); 
-    controller.yaw_pid.set_gains(.15,.08,.02);
+    controller.x_pos_pid->set_gains(.2,.13,.07);
+    controller.y_pos_pid->set_gains(.3,.11,.04); 
+    controller.z_pos_pid->set_gains(.15,.08,.02);  
+    controller.roll_pid->set_gains(.2,.13,.07); 
+    controller.pitch_pid->set_gains(.3,.11,.04); 
+    controller.yaw_pid->set_gains(.15,.08,.02);
     
 
     controller.getStatus();

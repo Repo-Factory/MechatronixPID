@@ -2,6 +2,7 @@
 #include <string>
 #include <utility>
 #include <tuple>
+#include <memory>
 
 #include "pid_controller.hpp"
 #include "pid_params.hpp"
@@ -17,16 +18,16 @@ using namespace std;
 class Scion_Position_PID_Controller
 {
     public:
-        PID_Controller roll_pid;
-        PID_Controller pitch_pid;
-        PID_Controller yaw_pid;
-        PID_Controller x_pos_pid;
-        PID_Controller y_pos_pid;
-        PID_Controller z_pos_pid;
-        PID_Controller x_vel_pid;
-        PID_Controller y_vel_pid;
-        PID_Controller z_vel_pid;
-        std::map<string, PID_Controller*> controllers;
+        shared_ptr<PID_Controller> roll_pid;
+        shared_ptr<PID_Controller> pitch_pid;
+        shared_ptr<PID_Controller> yaw_pid;
+        shared_ptr<PID_Controller> x_pos_pid;
+        shared_ptr<PID_Controller> y_pos_pid;
+        shared_ptr<PID_Controller> z_pos_pid;
+        shared_ptr<PID_Controller> x_vel_pid;
+        shared_ptr<PID_Controller> y_vel_pid;
+        shared_ptr<PID_Controller> z_vel_pid;
+        std::map<string, shared_ptr<PID_Controller>> controllers;
         vector<vector<double>> pid_thrust_mapper;
 
         Scion_Position_PID_Controller();

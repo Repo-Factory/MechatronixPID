@@ -79,7 +79,7 @@ PID_Params::PID_Params()
 
     this->x_vel =
     {
-         {"kp", 20.0},
+        {"kp", 20.0},
         {"ki", 0.0},
         {"kd", 0.0},
         {"ctrl_val_offset", 0.0},
@@ -116,9 +116,9 @@ PID_Params::PID_Params()
 
     this->pid_params = 
     {
-        {"roll", this->roll},
+        {"roll",  this->roll},
         {"pitch", this->pitch},
-        {"yaw", this->yaw},
+        {"yaw",   this->yaw},
         {"x_pos", this->x_pos},
         {"y_pos", this->y_pos},
         {"z_pos", this->z_pos},
