@@ -4,7 +4,8 @@
 Scion_Position_PID_Controller::Scion_Position_PID_Controller()
 {
 
-/** Create a "positional" pid control system for the Scion. This system constains a positional pid layer
+/** 
+  * Create a "positional" pid control system for the Scion. This system constains a positional pid layer
   * that directly feeds into a velocity PID layer. There will be 6 directional controller for
   * (roll, pitch, yaw, x, y, z). These are the DOFs controllable by the actuator.
 */

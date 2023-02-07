@@ -108,8 +108,7 @@ PID_Controller::PID_Controller
     }
         
     // Create our P-I-D based on error
-    double proportional = (this->k_p * error);  // Directly proportional to error based on k_p constant
-
+    
     this->integral = this->integral + (error * dt);     // Integral builds over time
     if (this->i_min < this->i_max)                      // Clamp integral if necessary
     {
@@ -122,17 +121,19 @@ PID_Controller::PID_Controller
             this->integral = this->i_max;
         }
     }
+
+    double proportional = (this->k_p * error);  // Directly proportional to error based on k_p constant
+
     double integral = this->k_i * this->integral;
 
     double derivative = this->k_d * (error - this->previous_error) / dt; // Derivative takes into account previous error
 
+    double pre_ctrl_val = proportional + integral + derivative; // Our ctrl signal but we may have to clamp
+
     this->previous_error = error;            // reset error for next cycle
 
-
-    // Get our control value and clamp it if necessary
-    double pre_ctrl_val = proportional + integral + derivative;
-
-    double ctrl_val;
+    
+    double ctrl_val; // Clamp control value if necessary
 
     if (pre_ctrl_val >= 0)
     {
