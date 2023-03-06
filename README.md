@@ -1,4 +1,4 @@
-Normal People Talk For How This Sh*t Actually Works
+Normal People Talk For How This Actually Works
 ______________________________________________________
 
 
