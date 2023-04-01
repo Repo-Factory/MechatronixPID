@@ -1,0 +1,9 @@
+__pycache__
+.vscode
+archive/
+build/
+install/
+linker_studying/
+log/
+*.o
+scion
