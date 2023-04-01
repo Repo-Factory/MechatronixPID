@@ -1,4 +1,0 @@
-Invoking command in '/home/conner/mechatronics/pid/build/dummy_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/conner/mechatronics/pid/dummy_sensor -DCMAKE_INSTALL_PREFIX=/home/conner/mechatronics/pid/install/dummy_sensor
-Invoked command in '/home/conner/mechatronics/pid/build/dummy_sensor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/conner/mechatronics/pid/dummy_sensor -DCMAKE_INSTALL_PREFIX=/home/conner/mechatronics/pid/install/dummy_sensor
-Invoking command in '/home/conner/mechatronics/pid/build/dummy_sensor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/conner/mechatronics/pid/build/dummy_sensor -- -j8 -l8
-Invoked command in '/home/conner/mechatronics/pid/build/dummy_sensor' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/conner/mechatronics/pid/build/dummy_sensor -- -j8 -l8

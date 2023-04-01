@@ -1,2 +1,0 @@
-Invoking command in '/home/conner/mechatronics/pid/build/robot_types': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/conner/mechatronics/pid/build/robot_types -- -j8 -l8
-Invoked command in '/home/conner/mechatronics/pid/build/robot_types' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/conner/mechatronics/pid/build/robot_types -- -j8 -l8

@@ -1,7 +1,0 @@
-[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
-[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:34:56:[m[K [01;31m[Kerror: [m[K‘[01m[Kdesired_position_callback[m[K’ is not a member of ‘[01m[KController[m[K’
-   34 |         (desired_position_, 10, std::bind(&Controller::[01;31m[Kdesired_position_callback[m[K, this, _1));
-      |                                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-make[2]: *** [CMakeFiles/pid_controller.dir/build.make:63: CMakeFiles/pid_controller.dir/src/pid_controller.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/pid_controller.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

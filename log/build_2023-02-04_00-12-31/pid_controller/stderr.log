@@ -1,7 +1,0 @@
-[01m[K/home/conner/mechatronics/pid/pid_controller/src/pid_controller.cpp:10:10:[m[K [01;31m[Kfatal error: [m[Krobot_types/msg/Position.hpp: No such file or directory
-   10 | #include [01;31m[K"robot_types/msg/Position.hpp"[m[K          // Custom message types defined in robot_types pack
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-make[2]: *** [CMakeFiles/pid_controller.dir/build.make:63: CMakeFiles/pid_controller.dir/src/pid_controller.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/pid_controller.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

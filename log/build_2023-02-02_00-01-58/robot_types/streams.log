@@ -1,5 +1,0 @@
-[0.045s] Invoking command in '/home/conner/mechatronics/pid/build/robot_types': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/conner/mechatronics/pid/build/robot_types -- -j8 -l8
-[0.085s] CMake Error: The source directory "/home/conner/mechatronics/pid/robot_types" does not exist.
-[0.085s] Specify --help for usage, or press the help button on the CMake GUI.
-[0.087s] make: *** [Makefile:748: cmake_check_build_system] Error 1
-[0.093s] Invoked command in '/home/conner/mechatronics/pid/build/robot_types' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/conner/mechatronics/pid/build/robot_types -- -j8 -l8

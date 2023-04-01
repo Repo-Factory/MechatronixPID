@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target dummy_brain[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/dummy_brain.dir/src/dummy_brain.cpp.o[0m
-[100%] [32m[1mLinking CXX executable dummy_brain[0m
-[100%] Built target dummy_brain

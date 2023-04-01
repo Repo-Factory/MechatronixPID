@@ -1,5 +1,0 @@
-[0.255s] Invoking command in '/home/conner/mechatronics/pid/build/dummy_brain': AMENT_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types CMAKE_PREFIX_PATH=/home/conner/mechatronics/pid/install/robot_types LD_LIBRARY_PATH=/home/conner/mechatronics/pid/install/robot_types/lib PYTHONPATH=/home/conner/mechatronics/pid/install/robot_types/lib/python3.8/site-packages /usr/bin/cmake --build /home/conner/mechatronics/pid/build/dummy_brain -- -j8 -l8
-[0.596s] [35m[1mScanning dependencies of target dummy_brain[0m
-[0.667s] [ 50%] [32mBuilding CXX object CMakeFiles/dummy_brain.dir/src/dummy_brain.cpp.o[0m
-[13.338s] [100%] [32m[1mLinking CXX executable dummy_brain[0m
-[13.963s] [100%] Built target dummy_brain
